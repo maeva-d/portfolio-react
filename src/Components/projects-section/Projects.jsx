@@ -17,26 +17,26 @@ const Projects = () => {
       <div className="container sections">
         <h2>Projets</h2>
         <menu>
-          <nav>
-            <aside>
-              <img
-                src={tripadvisor}
-                alt="projet tripadvisor"
-                // onMouseEnter={() => setShowDescription(true)}
-                // onMouseLeave={() => setShowDescription(false)}
-              />
-              {/* {showDescription && ( */}
-              <div className="description">
-                <ul>
-                  <li>Responsive sur 3 breakpoints</li>
-                  <li>Carousel de photos</li>
-                  <li>Envoi automatisé de mail</li>
-                </ul>
-              </div>
-              {/* )} */}
-            </aside>
-            <aside></aside>
-          </nav>
+          {/* <nav> */}
+          <article>
+            <img
+              src={tripadvisor}
+              alt="projet tripadvisor"
+              // onMouseEnter={() => setShowDescription(true)}
+              // onMouseLeave={() => setShowDescription(false)}
+            />
+            {/* {showDescription && ( */}
+
+            <ul className="description">
+              <li>Responsive sur 3 breakpoints</li>
+              <li>Carousel de photos</li>
+              <li>Envoi automatisé de mail</li>
+            </ul>
+
+            {/* )} */}
+          </article>
+          <aside></aside>
+          {/* </nav> */}
           {/* <nav>
             <aside></aside>
             <aside></aside>

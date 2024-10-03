@@ -9,9 +9,10 @@
     font-family: "baskervville";
     text-transform: uppercase;
     line-height: 100px;
+    margin-bottom: 80px;
   }
 
-  aside: {
+  article {
     position: relative;
   }
 
@@ -20,18 +21,18 @@
     transition: filter 0.5s ease-in-out;
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
-    // position: relative;
-  }
+    position: relative;
 
-  img:hover {
-    cursor: pointer;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    &:hover {
+      cursor: pointer;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
   }
 
   .description {
     position: absolute;
-    // bottom: 15px;
+    bottom: 2px;
 
     li {
       color: #{black};
