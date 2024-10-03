@@ -1,0 +1,41 @@
+@import "../../variables.scss";
+
+.projects {
+  height: 100vh;
+  background-color: #{$chinese-white};
+
+  h2 {
+    font-size: 40px;
+    font-family: "baskervville";
+    text-transform: uppercase;
+    line-height: 100px;
+  }
+
+  aside: {
+    position: relative;
+  }
+
+  img {
+    width: 500px;
+    transition: filter 0.5s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    // position: relative;
+  }
+
+  img:hover {
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .description {
+    position: absolute;
+    // bottom: 15px;
+
+    li {
+      color: #{black};
+      font-family: "inter", sans-serif;
+    }
+  }
+}

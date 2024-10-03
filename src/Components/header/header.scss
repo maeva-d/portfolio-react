@@ -1,0 +1,58 @@
+@import "../../variables.scss";
+
+.header {
+  height: 96px;
+  background-color: #{$chinese-white};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.8px solid #{$moss-green};
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  h1 {
+    font-size: 40px;
+    color: #{$black};
+    font-family: "baskervville";
+    line-height: 48px;
+  }
+
+  a {
+    font-family: "inter", sans-serif;
+    text-decoration: none;
+    line-height: 32px;
+    font-size: 18px;
+    color: #{$deep-green};
+    display: inline-block;
+    position: relative;
+  }
+
+  a:not(:last-child) {
+    margin-right: 72px;
+  }
+
+  a:hover {
+    color: #{$deep-green};
+  }
+
+  a::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #{$deep-green};
+    position: absolute;
+    bottom: 50%;
+    z-index: -1;
+  }
+
+  a:hover::after {
+    width: 100%;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../variables.scss";
+
+.add-to-cart {
+  border: 0.5px solid black;
+  padding: 0px 24px;
+
+  span {
+    font-size: 15px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #{$deep-green};
+    font-family: "baskervville";
+  }
+}

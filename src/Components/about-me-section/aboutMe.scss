@@ -1,0 +1,51 @@
+@import "../../variables.scss";
+
+.about-me {
+  background-color: #{$chinese-white};
+  div {
+    display: flex;
+    padding: 88px 32px;
+    height: 100vh;
+    justify-content: space-between;
+  }
+
+  aside {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  h2,
+  h4,
+  p {
+    color: #{$deep-green};
+  }
+  h4 {
+    word-spacing: 24px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 96px;
+    text-transform: uppercase;
+  }
+  h3 {
+    color: #{$moss-green};
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 48px;
+  }
+
+  p {
+    width: 450px;
+    font-family: "inter", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    display: inline-block;
+  }
+
+  img {
+    width: 400px;
+  }
+}

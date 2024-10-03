@@ -1,0 +1,55 @@
+@import "../../variables.scss";
+
+.skill {
+  background-color: #{$moss-green};
+  height: 100vh;
+  // padding: 88px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2,
+  p {
+    color: #{$black};
+    font-family: "inter", sans-serif;
+  }
+
+  h2 {
+    font-size: 21px;
+    // width: 700px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 96px;
+  }
+
+  h2 span {
+    font-style: italic;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  // .row:not(:last-child) {
+  //   margin-bottom: 40px;
+  // }
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #{$chinese-white};
+    padding: 16px;
+
+    p {
+      line-height: 80px;
+      font-size: 24px;
+      font-family: "inter", sans-serif;
+      font-weight: 300;
+      color: #{$black};
+    }
+  }
+}

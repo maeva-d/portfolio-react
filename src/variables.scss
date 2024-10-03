@@ -1,0 +1,15 @@
+$deep-green: #0c4330;
+$chinese-white: #e3e4d8;
+$moss-green: #a0a15f;
+$light-purple: #d5d2dd;
+$dark-purple: #000728;
+$black: #000000;
+
+:root {
+  --data-color-deep-green: #{$deep-green};
+  --data-color-chinese-white: #{$chinese-white};
+  --data-color-moss-green: #{$moss-green};
+  --data-color-black: #{$black};
+  --data-color-light-purple: #{$light-purple};
+  --data-color-dark-purple: #{$dark-purple};
+}
