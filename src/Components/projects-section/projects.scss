@@ -1,7 +1,6 @@
 @import "../../variables.scss";
 
 .projects {
-  height: 100vh;
   background-color: #{$chinese-white};
 
   h2 {
@@ -10,6 +9,12 @@
     text-transform: uppercase;
     line-height: 100px;
     margin-bottom: 80px;
+    text-align: center;
+  }
+
+  menu {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   article {
@@ -30,13 +35,51 @@
     }
   }
 
+  h4,
+  h5 {
+    font-family: "inter", sans-serif;
+    color: #{$chinese-white};
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  h4 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-weight: 200;
+  }
+
   .description {
+    background-color: #{$black};
+    opacity: 0.5;
     position: absolute;
-    bottom: 2px;
+    bottom: 0px;
+    left: 0px;
+    // transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 56px;
+    // .scroll-section {
+    //   opacity: 0;
+    //   transition: opacity 0.5s ease;
+    // }
+
+    // .scroll-section.visible {
+    //   opacity: 1;
+    // }
 
     li {
-      color: #{black};
+      color: #{$chinese-white};
       font-family: "inter", sans-serif;
+      opacity: 1;
+      line-height: 24px;
+      font-weight: 500;
     }
   }
 }
