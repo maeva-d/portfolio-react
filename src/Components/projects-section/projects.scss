@@ -51,11 +51,16 @@
     justify-content: center;
     align-content: center;
     padding: 56px;
-    // opacity: 0;
-    // transition: opacity 3.3s ease-in-out;
+    opacity: 0;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: opacity 0.5s ease-in, filter 0.5s ease-in;
+    // position: relative;
 
-    &.visible {
+    &:hover {
       opacity: 1;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
       pointer-events: all; // Allow interactions when visible
       cursor: pointer;
     }
