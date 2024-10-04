@@ -4,7 +4,7 @@ import { useState } from "react";
 import "../../common-rules.scss";
 import "./projects.scss";
 // Components
-// import CTAButton from "../CTA-button/CTAButton";
+import CTAButton from "../CTA-button/CTAButton";
 
 // pictures
 import tripadvisor from "../../assets/pictures/tripadvisor.png";
@@ -23,22 +23,25 @@ const Projects = () => {
           <article>
             <img
               src={tripadvisor}
-              alt="projet tripadvisor"
+              alt="projet-tripadvisor"
               onMouseEnter={() => setShowDescription1(true)}
               onMouseLeave={() => setShowDescription1(false)}
             />
             {showDescription1 && (
-              <ul
-                className="description"
+              <div
+                className={`description ${showDescription1 && "visible"}`}
                 onMouseEnter={() => setShowDescription1(true)}
                 onMouseLeave={() => setShowDescription1(false)}
               >
-                <h4>Trip Advisor</h4>
-                <h5>Projet front-end : HTML, CSS, Vanilla JS</h5>
-                <li>Responsive sur 3 breakpoints</li>
-                <li>Carousel de photos</li>
-                <li>Envoi automatisé de mail</li>
-              </ul>
+                <ul>
+                  <h4>Trip Advisor</h4>
+                  <h5>Projet front-end : HTML, CSS, Vanilla JS</h5>
+                  <li>Responsive sur 3 breakpoints</li>
+                  <li>Carousel de photos</li>
+                  <li>Envoi automatisé de mail</li>
+                </ul>
+                <CTAButton text={"Découvrez"} className="button"></CTAButton>
+              </div>
             )}
           </article>
           <article>
