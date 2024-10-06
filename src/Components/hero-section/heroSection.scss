@@ -7,7 +7,7 @@
   img {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
   }
 
@@ -16,7 +16,7 @@
     width: 380px;
     position: absolute;
     right: 150px;
-    bottom: 200px;
+    bottom: 150px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -40,7 +40,7 @@
   .hero {
     div {
       right: 100px;
-      bottom: 150px;
+      bottom: 100px;
     }
   }
 }
@@ -49,7 +49,7 @@
   .hero {
     div {
       right: 50px;
-      bottom: 100px;
+      bottom: 50px;
       width: 320px;
     }
 
