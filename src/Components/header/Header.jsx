@@ -10,8 +10,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      if (scrollPosition > 96) {
+      if (window.scrollY > 96) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -24,33 +23,6 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  // const smoothScroll = () => {
-  //   const smoothScrollTo = (id) => {
-  //     scroll.scrollTo(id, {
-  //       duration: 800,
-  //       offset: -88,
-  //       smooth: "easeInOutQuart",
-  //     })
-  //   }
-
-  //   return (
-  //     activeClass="active"
-  //     to="section"
-  //     spy={true}
-  //     smooth={true}
-  //     offset={-50}
-  //     duration={800}
-  //     onClick={() => {smoothScrollTo(section)}}
-  //   )
-  // }
-
-  // const scrollToSection = (id) => {
-  //   const elem = document.getElementById(id);
-  //   if (elem) {
-  //     elem.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
 
   return (
     <header className={`header ${isScrolled && "transparent"}`}>

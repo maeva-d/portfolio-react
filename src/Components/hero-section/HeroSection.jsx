@@ -19,7 +19,7 @@ const HeroSection = () => {
           Une conception exquise, codée avec précision pour un portfolio élégant
           et percutant.
         </h2>
-        <CTAButton text={"Explorer"} onClick={handleClick}></CTAButton>
+        <CTAButton onClick={handleClick} text="Explorer"></CTAButton>
       </div>
     </section>
   );

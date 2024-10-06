@@ -26,11 +26,6 @@
       font-family: "inter", sans-serif;
       line-height: 100px;
     }
-    img {
-      width: 30px;
-      height: 30px;
-      object-fit: cover;
-    }
 
     nav {
       display: flex;
@@ -48,6 +43,16 @@
         &:visited {
           color: #{$deep-green};
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-me {
+    aside {
+      h2 {
+        font-size: 40px;
       }
     }
   }

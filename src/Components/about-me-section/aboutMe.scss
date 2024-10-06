@@ -7,12 +7,14 @@
     padding: 88px 32px;
     height: 100vh;
     justify-content: space-between;
+    gap: 40px;
   }
 
   aside {
     justify-content: center;
     align-content: center;
     text-align: center;
+    width: 65%;
   }
 
   h2,
@@ -20,16 +22,26 @@
   p {
     color: #{$deep-green};
   }
+
   h4 {
     word-spacing: 24px;
-    font-size: 20px;
+    font-size: 22px;
     text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 16px;
+    span {
+      font-size: 28px;
+      text-transform: lowercase;
+      letter-spacing: 2px;
+    }
   }
+
   h2 {
-    font-size: 48px;
+    font-size: 56px;
     line-height: 96px;
     text-transform: uppercase;
   }
+
   h3 {
     color: #{$moss-green};
     font-size: 32px;
@@ -46,6 +58,7 @@
   }
 
   img {
-    width: 400px;
+    width: 35%;
+    object-fit: cover;
   }
 }

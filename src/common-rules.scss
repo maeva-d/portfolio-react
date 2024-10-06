@@ -6,3 +6,23 @@
 .sections {
   padding: 88px 24px;
 }
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+// @media (max-width:1200px) {
+
+// }
