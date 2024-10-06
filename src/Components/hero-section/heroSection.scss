@@ -36,11 +36,15 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .hero {
     div {
       right: 100px;
       bottom: 100px;
+    }
+
+    h2 {
+      font-size: 22px;
     }
   }
 }
