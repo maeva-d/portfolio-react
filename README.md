@@ -1,8 +1,10 @@
-# React + Vite
+# Bienvenue sur mon portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Quelques informations
+- Portfolio pure front réalisé avec React et initalisé avec yarn
+- Plusieurs sections : à propos, projets et informations de contact
+- Pas encore totalement responsive... J'y travaille.
 
-Currently, two official plugins are available:
+  La partie "projets" liste différents projets réalisés, du plus simple front-end statique au full-stack. Cliquez sur un des projets et vous serez redirigés sur leur site.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  Merci de votre intérêt et si vous constatez une anomalie, n'hésitez surtout pas à me la signaler!
