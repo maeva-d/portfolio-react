@@ -62,3 +62,21 @@
     object-fit: cover;
   }
 }
+
+@media (max-width: 1400px) {
+  .about-me {
+    h2 {
+      font-size: 48px;
+      line-height: 80px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .about-me {
+    h2 {
+      font-size: 40px;
+      line-height: 72px;
+    }
+  }
+}
