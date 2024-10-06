@@ -3,60 +3,96 @@
 .header {
   height: 96px;
   background-color: #{$chinese-white};
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 0.8px solid #{$moss-green};
+  border-bottom: 0.5px solid #{$deep-green};
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: all 0.6s ease-in;
 
-  h1 {
-    font-size: 40px;
-    color: #{$black};
-    font-family: "baskervville";
-    line-height: 48px;
+  &.transparent {
+    transition: all 0.2s ease-in;
+    background-color: rgba(white, 0.4);
+    backdrop-filter: blur(40px);
   }
 
-  a {
-    font-family: "inter", sans-serif;
-    text-decoration: none;
-    line-height: 32px;
-    font-size: 16px;
-    color: #{$deep-green};
-    display: inline-block;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
 
-    // &:visited {
-    //   color: #{$chinese-white};
-    // }
-  }
+    h1 {
+      font-size: 40px;
+      color: #{$black};
+      font-family: "baskervville";
+      line-height: 48px;
+    }
 
-  a:not(:last-child) {
-    margin-right: 72px;
-  }
+    // the cart
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 0px;
+      padding: 4px;
+      // background-color: red;
+      cursor: pointer;
 
-  a:hover {
-    color: #{$deep-green};
-  }
+      svg {
+        position: relative;
+      }
+    }
 
-  a::after {
-    content: " ";
-    display: block;
-    width: 0;
-    height: 1.5px;
-    background: #{$deep-green};
-    position: absolute;
-    bottom: 45%;
-    z-index: -1;
-  }
+    nav {
+      a {
+        font-family: "inter", sans-serif;
+        text-decoration: none;
+        line-height: 32px;
+        font-size: 16px;
+        color: #{$black};
+        display: inline-block;
+        position: relative;
 
-  a:hover::after {
-    width: 100%;
-    -webkit-transition: width 0.5s;
-    -moz-transition: width 0.5s;
-    -o-transition: width 0.5s;
-    transition: width 0.5s;
+        &:not(:last-child) {
+          margin-right: 72px;
+        }
+
+        &:hover {
+          color: #{$moss-green};
+        }
+
+        &::after {
+          content: " ";
+          display: block;
+          width: 0;
+          height: 1.5px;
+          background: #{$deep-green};
+          position: absolute;
+          bottom: 45%;
+          z-index: -1;
+        }
+
+        &:hover::after {
+          width: 100%;
+          -webkit-transition: width 0.5s;
+          -moz-transition: width 0.5s;
+          -o-transition: width 0.5s;
+          transition: width 0.5s;
+        }
+      }
+    }
   }
+}
+
+.cart-item {
+  width: 10px;
+  height: 10px;
+  background-color: #{$deep-green};
+  border-radius: 50%;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  transition: all 0.3s ease-out;
 }
