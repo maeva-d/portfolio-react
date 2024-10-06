@@ -1,3 +1,4 @@
+// import { useState } from "react";
 // Styles
 import "../../common-rules.scss";
 import "./skills.scss";
@@ -5,50 +6,18 @@ import "./skills.scss";
 import AddToCart from "../add-to-cart/AddToCart";
 
 const Skills = () => {
+  // const [cart, setCart] = useState([]);
+
+  // // const skillTab = Array.from({ length: 4 }, (_, index) => index);
+
+  // // const handleClick = () => {
+  // //   const cartCopy = [...cart];
+  // //   let itemSpotted = cartCopy.find((elem) => )
+  // // }
+
   return (
-    <section className="skill">
+    <section id="skills" className="skills">
       <div className="container">
-        {/* <h2>
-          Du front-end au back-end, la maîtrise de ces technos incarne
-          <span> polyvalence </span> et la <span>passion</span> du
-          <span> développement web et mobile</span>.
-        </h2>
-        <menu className="row">
-          <div className="column">
-            <p>HTML</p>
-            <AddToCart></AddToCart>
-          </div>
-          <div className="column">
-            <p>CSS / SCSS</p>
-            <AddToCart></AddToCart>
-          </div>
-          <div className="column">
-            <p>JavaScript</p>
-            <AddToCart></AddToCart>
-          </div>
-          <div className="column">
-            <p>React</p>
-            <AddToCart></AddToCart>
-          </div>
-        </menu>
-        <menu className="row">
-          <div className="column">
-            <p>NodeJS</p>
-            <AddToCart></AddToCart>
-          </div>
-          <div className="column">
-            <p>Express</p>
-            <AddToCart></AddToCart>
-          </div>
-          <div className="column">
-            <p>MongoDB</p>
-            <AddToCart></AddToCart>
-          </div>
-          <div className="column">
-            <p>React Native</p>
-            <AddToCart></AddToCart>
-          </div>
-        </menu> */}
         <h2>
           L'alliance entre expérience en entreprise et cours est le moyen idéal
           pour améliorer mes compétences, mais aussi pour me permettre de me

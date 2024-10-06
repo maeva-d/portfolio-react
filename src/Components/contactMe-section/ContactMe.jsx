@@ -7,7 +7,7 @@ import image from "../../assets/pictures/laptop-jewels-unsplash.jpg";
 
 const ContactMe = () => {
   return (
-    <section className="contact-me">
+    <section id="contact-me" className="contact-me">
       <img src={image} alt="keyboard" />
       <aside>
         <h2>Contactez-moi</h2>

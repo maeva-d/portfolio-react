@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+// import { Link, animateScroll as scroll } from "react-scroll";
 
 // Style
 import "./header.scss";
@@ -23,6 +24,33 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // const smoothScroll = () => {
+  //   const smoothScrollTo = (id) => {
+  //     scroll.scrollTo(id, {
+  //       duration: 800,
+  //       offset: -88,
+  //       smooth: "easeInOutQuart",
+  //     })
+  //   }
+
+  //   return (
+  //     activeClass="active"
+  //     to="section"
+  //     spy={true}
+  //     smooth={true}
+  //     offset={-50}
+  //     duration={800}
+  //     onClick={() => {smoothScrollTo(section)}}
+  //   )
+  // }
+
+  // const scrollToSection = (id) => {
+  //   const elem = document.getElementById(id);
+  //   if (elem) {
+  //     elem.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
   return (
     <header className={`header ${isScrolled && "transparent"}`}>
@@ -50,10 +78,10 @@ const Header = () => {
           <figure className="cart-item"></figure>
         </div>
         <nav>
-          <a href="">À propos de moi</a>
-          <a href="">Compétences</a>
-          <a href="">Projets</a>
-          <a href="">Contactez-moi</a>
+          <a href="#about-me">À propos de moi</a>
+          <a href="#skills">Compétences</a>
+          <a href="#projects">Projets</a>
+          <a href="#contact-me">Contactez-moi</a>
         </nav>
       </div>
     </header>

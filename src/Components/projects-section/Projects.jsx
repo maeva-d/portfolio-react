@@ -9,6 +9,7 @@ import CTAButton from "../CTA-button/CTAButton";
 // pictures
 import tripadvisor from "../../assets/pictures/tripadvisor.png";
 import vinted from "../../assets/pictures/vinted.png";
+import marvel from "../../assets/pictures/marvel.png";
 
 const Projects = () => {
   const [showDescription1, setShowDescription1] = useState(false);
@@ -16,13 +17,12 @@ const Projects = () => {
   const [showDescription3, setShowDescription3] = useState(false);
   // const [showDescription4, setShowDescription4] = useState(false);
 
-  const openExternalLink = (link) => {
-    const url = link; // Specify the URL of the external website here
+  const openExternalLink = (url) => {
     window.open(url, "_blank");
   };
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className="container sections">
         <h2>Projets</h2>
         <menu>
@@ -35,8 +35,7 @@ const Projects = () => {
             />
             {showDescription1 && (
               <div
-                //Ne me sert à rien mais utile de savoir qu'on peut faire ça:
-                className={`description ${showDescription1 && "visible"}`}
+                className="description"
                 onMouseEnter={() => setShowDescription1(true)}
                 onMouseLeave={() => setShowDescription1(false)}
               >
@@ -93,7 +92,7 @@ const Projects = () => {
           </article>
           <article>
             <img
-              src={vinted}
+              src={marvel}
               alt="projet-marvel"
               onMouseEnter={() => setShowDescription3(true)}
               onMouseLeave={() => setShowDescription3(false)}
@@ -109,16 +108,19 @@ const Projects = () => {
                   <h5>
                     Projet full-stack : React, SCSS, NodeJS, MongoDB, express
                   </h5>
-                  <li>Inscription et connexion</li>
+                  {/* <li>Inscription et connexion</li> */}
                   <li>Récupération de données</li>
                   <li>Système de favoris</li>
                   <li>Pagination</li>
                   <li>Barre de recherche</li>
                 </ul>
                 <CTAButton
-                  text={"Découvrez"}
+                  text={"Découvrir"}
                   className="button"
-                  // onClick={() => openExternalLink("foo")}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    openExternalLink("https://maeva-d-marvel.netlify.app/");
+                  }}
                 ></CTAButton>
               </div>
             )}

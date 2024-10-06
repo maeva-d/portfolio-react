@@ -1,6 +1,6 @@
 @import "../../variables.scss";
 
-.skill {
+.skills {
   background-color: #{$moss-green};
   height: 100vh;
   // padding: 88px 32px;
@@ -43,6 +43,7 @@
     align-items: center;
     background-color: #{$chinese-white};
     padding: 16px;
+    border-radius: 8px;
 
     p {
       line-height: 80px;

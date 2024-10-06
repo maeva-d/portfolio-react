@@ -1,8 +1,14 @@
+// import { useRef } from "react";
 // Style
 import "../hero-section/heroSection.scss";
 // Components
 import heroImage from "../../assets/pictures/neon-keyboard-unsplash.jpg";
 import CTAButton from "../CTA-button/CTAButton.jsx";
+
+const handleClick = () => {
+  const element = document.getElementById("about-me");
+  element?.scrollIntoView();
+};
 
 const HeroSection = () => {
   return (
@@ -13,7 +19,7 @@ const HeroSection = () => {
           Une conception exquise, codée avec précision pour un portfolio élégant
           et percutant.
         </h2>
-        <CTAButton text={"Explorer"}></CTAButton>
+        <CTAButton text={"Explorer"} onClick={handleClick}></CTAButton>
       </div>
     </section>
   );

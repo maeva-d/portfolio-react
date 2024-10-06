@@ -4,7 +4,7 @@ import image from "../../assets/pictures/blurry-unsplash.jpg";
 
 const AboutMe = () => {
   return (
-    <section className="about-me">
+    <section id="about-me" className="about-me">
       <div className="container">
         <aside>
           <h4>L'alternance, une opportunité</h4>
