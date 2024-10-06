@@ -50,9 +50,9 @@ const Skills = () => {
           </div>
         </menu> */}
         <h2>
-          Lalliance entre expérience en entreprise et cours est le moyen idéal
+          L'alliance entre expérience en entreprise et cours est le moyen idéal
           pour améliorer mes compétences, mais aussi pour me permettre de me
-          former à dautres technologies, telles que :
+          former à d'autres technologies, telles que :
         </h2>
         <menu className="row">
           <div className="column">

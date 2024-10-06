@@ -1,18 +1,18 @@
 @import "../../variables.scss";
 
 .hero {
-  position: relative;
   // width: 100vw; // Ca créé un horizontal scroll indésirable ...
   height: 100vh;
   overflow: hidden;
   img {
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
   div {
-    padding: 16px;
+    padding: 48px 24px;
     width: 380px;
     position: absolute;
     right: 150px;
@@ -32,5 +32,6 @@
     text-transform: uppercase;
     line-height: 40px;
     text-align: right;
+    margin-bottom: 8px;
   }
 }

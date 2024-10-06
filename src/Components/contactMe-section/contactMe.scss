@@ -1,0 +1,54 @@
+@import "../../variables.scss";
+
+.contact-me {
+  background-color: #{$moss-green};
+  height: 100vh;
+  display: flex;
+
+  img {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  aside {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 50px;
+      font-family: "baskervville";
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 18px;
+      font-family: "inter", sans-serif;
+      line-height: 100px;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 24px;
+      a {
+        font-size: 20px;
+        font-family: "inter", sans-serif;
+        font-style: italic;
+        line-height: 56px;
+        text-decoration: none;
+        color: #{$chinese-white};
+        &:visited {
+          color: #{$deep-green};
+        }
+      }
+    }
+  }
+}
