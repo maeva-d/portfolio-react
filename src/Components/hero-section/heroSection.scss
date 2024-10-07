@@ -62,3 +62,27 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    div {
+      gap: 24px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    div {
+      padding: 24px;
+      right: 25px;
+      bottom: 25px;
+      width: 230px;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin-bottom: 0px;
+    }
+  }
+}

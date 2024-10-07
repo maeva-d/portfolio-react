@@ -10,8 +10,10 @@ const ContactMe = () => {
     <section id="contact-me" className="contact-me">
       <img src={image} alt="keyboard" />
       <aside>
-        <h2>Contactez-moi</h2>
-        <p>Pour échanger, ou convenir d'un entretien.</p>
+        <div>
+          <h2>Contactez-moi</h2>
+          <p>Pour échanger, ou convenir d'un entretien.</p>
+        </div>
         <nav>
           <a href="https://www.linkedin.com/in/maeva-d/" target="_blank">
             LinkedIn

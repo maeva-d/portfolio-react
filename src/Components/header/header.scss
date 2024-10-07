@@ -1,13 +1,13 @@
 @import "../../variables.scss";
 
 .header {
-  height: 96px;
+  height: 88px;
   background-color: #{$chinese-white};
   border-bottom: 0.5px solid #{$deep-green};
   position: sticky;
   top: 0;
   z-index: 100;
-  transition: all 0.4s ease-in;
+  // transition: all 0.4s ease-in;
 
   &.transparent {
     transition: all 0.2s ease-in;
@@ -117,13 +117,25 @@
 
 @media (max-width: 768px) {
   .header {
+    height: 72px;
     div {
       nav {
         a {
+          line-height: 20px;
           &:not(:last-child) {
             margin-right: 40px;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    div {
+      h1 {
+        font-size: 32px;
       }
     }
   }

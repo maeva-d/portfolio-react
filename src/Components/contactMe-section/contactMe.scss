@@ -16,15 +16,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h2 {
-      font-size: 50px;
-      font-family: "baskervville";
-      text-transform: uppercase;
-    }
-    p {
-      font-size: 18px;
-      font-family: "inter", sans-serif;
-      line-height: 100px;
+    div {
+      h2 {
+        font-size: 50px;
+        font-family: "baskervville";
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 18px;
+        font-family: "inter", sans-serif;
+        line-height: 100px;
+      }
     }
 
     nav {
@@ -43,6 +45,9 @@
         &:visited {
           color: #{$deep-green};
         }
+        &:hover {
+          color: #{$black};
+        }
       }
     }
   }
@@ -55,8 +60,10 @@
     }
     aside {
       width: 60%;
-      h2 {
-        font-size: 40px;
+      div {
+        h2 {
+          font-size: 40px;
+        }
       }
     }
   }
@@ -65,8 +72,62 @@
 @media (max-width: 768px) {
   .contact-me {
     aside {
-      h2 {
-        font-size: 32px;
+      div {
+        h2 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-me {
+    // background-image: url("/src/assets/pictures/two-screens-unsplash.jpg");
+    // background-size: cover;
+    img {
+      display: none;
+    }
+    aside {
+      width: 100%;
+      div {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          font-size: 28px;
+          line-height: 56px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 72px;
+        }
+        h2,
+        p {
+          color: #{$dark-purple};
+        }
+      }
+
+      nav {
+        a {
+          font-size: 18px;
+          background-color: rgba($chinese-white, 0.2);
+          backdrop-filter: blur(5px);
+          border: 1px solid #{$dark-purple};
+          border-radius: 4px;
+          width: 100px;
+          text-align: center;
+          // Ne fonctionne pas?
+          color: #{$chinese-white};
+          &:not(:last-child) {
+            margin-bottom: 16px;
+          }
+          &:hover {
+            color: #{$dark-purple};
+          }
+        }
       }
     }
   }

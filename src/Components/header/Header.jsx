@@ -28,7 +28,7 @@ const Header = () => {
     <header className={`header ${isScrolled && "transparent"}`}>
       <div className="container">
         <h1>Développeuse web et mobile</h1>
-        <div>
+        {/* <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30px"
@@ -48,10 +48,10 @@ const Header = () => {
             </g>
           </svg>
           <figure className="cart-item"></figure>
-        </div>
+        </div> */}
         <nav>
           <a href="#about-me">À propos de moi</a>
-          <a href="#skills">Compétences</a>
+          {/* <a href="#skills">Compétences</a> */}
           <a href="#projects">Projets</a>
           <a href="#contact-me">Contactez-moi</a>
         </nav>

@@ -79,3 +79,17 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .skills {
+    h2 {
+      font-size: 16px;
+    }
+    .column {
+      width: calc(50% - 16px);
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
