@@ -3,7 +3,6 @@
 .skills {
   background-color: #{$moss-green};
   height: 100vh;
-  // padding: 88px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,6 +50,32 @@
       font-family: "inter", sans-serif;
       font-weight: 300;
       color: #{$black};
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .skills {
+    height: unset;
+
+    h2 {
+      font-size: 18px;
+      line-height: 32px;
+      margin-bottom: 48px;
+    }
+
+    .row {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .column {
+      width: calc(50% - 24px);
+      p {
+        line-height: 56px;
+        font-size: 20px;
+      }
     }
   }
 }

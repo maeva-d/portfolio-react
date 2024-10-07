@@ -8,12 +8,12 @@ import CTAButton from "../CTA-button/CTAButton";
 
 // pictures
 import tripadvisor from "../../assets/pictures/tripadvisor.png";
-import vinted from "../../assets/pictures/vinted.png";
+// import vinted from "../../assets/pictures/vinted.png";
 import marvel from "../../assets/pictures/marvel.png";
 
 const Projects = () => {
   const [showDescription1, setShowDescription1] = useState(false);
-  const [showDescription2, setShowDescription2] = useState(false);
+  // const [showDescription2, setShowDescription2] = useState(false);
   const [showDescription3, setShowDescription3] = useState(false);
   // const [showDescription4, setShowDescription4] = useState(false);
 
@@ -59,7 +59,8 @@ const Projects = () => {
               </div>
             )}
           </article>
-          <article>
+          {/* VINTED */}
+          {/* <article>
             <img
               src={vinted}
               alt="projet-vinted"
@@ -89,7 +90,8 @@ const Projects = () => {
                 ></CTAButton>
               </div>
             )}
-          </article>
+          </article> */}
+          {/* MARVEL */}
           <article>
             <img
               src={marvel}

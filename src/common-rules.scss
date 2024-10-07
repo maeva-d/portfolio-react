@@ -27,3 +27,12 @@
     width: 768px;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 640px;
+  }
+  .sections {
+    padding: 32px 24px;
+  }
+}

@@ -50,9 +50,23 @@
 
 @media (max-width: 992px) {
   .contact-me {
+    img {
+      width: 40%;
+    }
     aside {
+      width: 60%;
       h2 {
         font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-me {
+    aside {
+      h2 {
+        font-size: 32px;
       }
     }
   }

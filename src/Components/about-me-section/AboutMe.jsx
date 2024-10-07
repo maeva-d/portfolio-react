@@ -28,7 +28,7 @@ const AboutMe = () => {
       // className={`about-me ${isVisible ? "visible" : "hidden"}`}
       className="about-me"
     >
-      <div className="container">
+      <div className="container sections">
         <aside>
           <h4>
             <span>/ma.e.va/</span>, Paris

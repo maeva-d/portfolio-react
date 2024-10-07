@@ -17,7 +17,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills">
-      <div className="container">
+      <div className="container sections">
         <h2>
           L'alliance entre expérience en entreprise et cours est le moyen idéal
           pour améliorer mes compétences, mais aussi pour me permettre de me

@@ -101,9 +101,30 @@
   .header {
     height: 80px;
 
-    a {
-      font-size: 14px;
-      line-height: 28px;
+    div {
+      nav {
+        a {
+          font-size: 14px;
+          line-height: 28px;
+          &:not(:last-child) {
+            margin-right: 56px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    div {
+      nav {
+        a {
+          &:not(:last-child) {
+            margin-right: 40px;
+          }
+        }
+      }
     }
   }
 }

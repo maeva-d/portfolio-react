@@ -97,7 +97,36 @@
 }
 
 @media (max-width: 1400px) {
-  .description {
-    padding: 40px;
+  .projects {
+    .description {
+      padding: 48px;
+      h5 {
+        line-height: 24px;
+      }
+    }
+
+    button {
+      bottom: 48px;
+      right: 48px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .projects {
+    h2 {
+      margin-bottom: 56px;
+      font-size: 32px;
+      line-height: 50px;
+    }
+
+    menu {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
+    article {
+      width: unset;
+    }
   }
 }
