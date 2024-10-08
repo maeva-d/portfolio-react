@@ -8,48 +8,70 @@
   justify-content: center;
   align-items: center;
 
-  h2,
-  p {
-    color: #{$black};
-    font-family: "inter", sans-serif;
-  }
-
-  h2 {
-    font-size: 21px;
-    // width: 700px;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 96px;
-  }
-
-  h2 span {
-    font-style: italic;
-  }
-
-  .row {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  // .row:not(:last-child) {
-  //   margin-bottom: 40px;
-  // }
-  .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #{$chinese-white};
-    padding: 16px;
-    border-radius: 8px;
-
-    p {
-      line-height: 80px;
-      font-size: 24px;
+  div {
+    h2,
+    p,
+    small {
       font-family: "inter", sans-serif;
-      font-weight: 300;
+    }
+
+    h2,
+    p {
       color: #{$black};
+    }
+
+    h2,
+    small {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 21px;
+      // width: 700px;
+      line-height: 40px;
+      display: inline-block;
+      margin-bottom: 96px;
+    }
+
+    // span: {
+    //   font-style: italic;
+    // }
+    small {
+      color: darkred;
+    }
+
+    menu {
+      margin-bottom: 32px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    // .row:not(:last-child) {
+    //   margin-bottom: 40px;
+    // }
+    .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #{$chinese-white};
+      padding: 16px;
+      border-radius: 8px;
+
+      p {
+        line-height: 80px;
+        font-size: 24px;
+        font-family: "inter", sans-serif;
+        font-weight: 300;
+        color: #{$black};
+      }
+
+      span {
+        color: #{$deep-green};
+      }
     }
   }
 }
@@ -57,24 +79,25 @@
 @media (max-width: 992px) {
   .skills {
     height: unset;
+    div {
+      h2 {
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 48px;
+      }
 
-    h2 {
-      font-size: 18px;
-      line-height: 32px;
-      margin-bottom: 48px;
-    }
+      .row {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
+      }
 
-    .row {
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 24px;
-    }
-
-    .column {
-      width: calc(50% - 24px);
-      p {
-        line-height: 56px;
-        font-size: 20px;
+      .column {
+        width: calc(50% - 24px);
+        p {
+          line-height: 56px;
+          font-size: 20px;
+        }
       }
     }
   }
@@ -82,13 +105,18 @@
 
 @media (max-width: 640px) {
   .skills {
-    h2 {
-      font-size: 16px;
-    }
-    .column {
-      width: calc(50% - 16px);
-      p {
-        font-size: 18px;
+    div {
+      h2 {
+        font-size: 16px;
+      }
+      small {
+        font-size: 13px;
+      }
+      .column {
+        width: calc(50% - 16px);
+        p {
+          font-size: 18px;
+        }
       }
     }
   }

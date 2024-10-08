@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 // Styles
 import "../../common-rules.scss";
 import "./skills.scss";
@@ -6,6 +6,12 @@ import "./skills.scss";
 import AddToCart from "../add-to-cart/AddToCart";
 
 const Skills = () => {
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
+
+  const add = () => {
+    setShowErrorMessage(true);
+  };
+
   // const [cart, setCart] = useState([]);
 
   // // const skillTab = Array.from({ length: 4 }, (_, index) => index);
@@ -13,6 +19,7 @@ const Skills = () => {
   // // const handleClick = () => {
   // //   const cartCopy = [...cart];
   // //   let itemSpotted = cartCopy.find((elem) => )
+
   // // }
 
   return (
@@ -21,26 +28,32 @@ const Skills = () => {
         <h2>
           L'alliance entre expérience en entreprise et cours est le moyen idéal
           pour améliorer mes compétences, mais aussi pour me permettre de me
-          former à d'autres technologies, telles que :
+          <span> former à d'autres technologies</span>, telles que :
         </h2>
         <menu className="row">
           <div className="column">
             <p>TypeScript</p>
-            <AddToCart></AddToCart>
+            <AddToCart onClick={add}></AddToCart>
           </div>
           <div className="column">
             <p>SQL</p>
-            <AddToCart></AddToCart>
+            <AddToCart onClick={add}></AddToCart>
           </div>
           <div className="column">
             <p>Next.js</p>
-            <AddToCart></AddToCart>
+            <AddToCart onClick={add}></AddToCart>
           </div>
           <div className="column">
             <p>Redux</p>
-            <AddToCart></AddToCart>
+            <AddToCart onClick={add}></AddToCart>
           </div>
         </menu>
+        {showErrorMessage && (
+          <small>
+            Cette option est disponible uniquement avec un contrat
+            d'apprentissage!
+          </small>
+        )}
       </div>
     </section>
   );

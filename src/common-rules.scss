@@ -45,3 +45,23 @@
     padding: 32px;
   }
 }
+
+@media (max-width: 576px) {
+  .container {
+    width: 500px;
+  }
+  .sections {
+    padding: 24px;
+  }
+}
+
+// Grands iPhones
+@media (max-width: 430px) {
+  .container {
+    width: 320px;
+  }
+  // .sections {
+  //   font-size: 13px;
+  //   line-height: 20px;
+  // }
+}

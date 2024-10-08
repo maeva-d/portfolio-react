@@ -40,3 +40,24 @@
     font-family: "baskervville";
   }
 }
+
+@media (max-width: 576px) {
+  .add-to-cart {
+    padding: 0 8px;
+  }
+  span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+// // Grands iPhones
+// @media (max-width: 430px) {
+//   .add-to-cart {
+//     padding: 0 8px;
+//   }
+//   span {
+//     font-size: 13px;
+//     line-height: 20px;
+//   }
+// }

@@ -36,9 +36,18 @@ const AboutMe = () => {
           <h2>Développeuse React</h2>
           <h3>Full-stack MERN</h3>
           <p>
-            Laissez-vous tenter par le contract d'apprentissage, pour une durée
+            Laissez-vous tenter par le contrat d'apprentissage, pour une durée
             de 15 à 17 mois.
           </p>
+          <br />
+          <small>
+            Le saviez-vous? Tout contrat signé avant la fin de l'année 2024 vous
+            donne droit à une prime de{" "}
+            <a href="https://entreprendre.service-public.fr/vosdroits/F23556">
+              6000€
+            </a>
+            .
+          </small>
           {/* <Link to="/learn-more">En savoir plus</Link> */}
         </aside>
         <img src={image} alt="code" />

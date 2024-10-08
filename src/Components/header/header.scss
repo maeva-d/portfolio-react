@@ -60,7 +60,7 @@
         }
 
         &:hover {
-          color: #{$moss-green};
+          color: #{$dark-purple};
         }
 
         &::after {
@@ -68,7 +68,7 @@
           display: block;
           width: 0;
           height: 1.5px;
-          background: #{$deep-green};
+          background: #{$moss-green};
           position: absolute;
           bottom: 45%;
           z-index: -1;

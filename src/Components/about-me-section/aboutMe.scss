@@ -4,11 +4,10 @@
   background-color: #{$chinese-white};
   div {
     display: flex;
-    // padding: 88px 32px;
     height: 100vh;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 80px;
   }
 
   aside {
@@ -16,46 +15,69 @@
     align-content: center;
     text-align: center;
     width: 65%;
-  }
 
-  h2,
-  h4,
-  p {
-    color: #{$deep-green};
-  }
-
-  h4 {
-    word-spacing: 24px;
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    margin-bottom: 16px;
-    span {
-      font-size: 28px;
-      text-transform: lowercase;
-      letter-spacing: 2px;
+    h2,
+    h4,
+    p,
+    small {
+      color: #{$deep-green};
     }
-  }
 
-  h2 {
-    font-size: 56px;
-    line-height: 96px;
-    text-transform: uppercase;
-  }
+    h4 {
+      word-spacing: 24px;
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      margin-bottom: 16px;
+      span {
+        font-size: 28px;
+        text-transform: lowercase;
+        letter-spacing: 2px;
+      }
+    }
 
-  h3 {
-    color: #{$moss-green};
-    font-size: 32px;
-    font-style: italic;
-    margin-bottom: 48px;
-  }
+    h2 {
+      font-size: 56px;
+      line-height: 96px;
+      text-transform: uppercase;
+    }
 
-  p {
-    width: 450px;
-    font-family: "inter", sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    display: inline-block;
+    h3 {
+      color: #{$moss-green};
+      font-size: 32px;
+      font-style: italic;
+      margin-bottom: 48px;
+    }
+
+    p {
+      width: 450px;
+      font-family: "inter", sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+
+    p,
+    small {
+      font-family: "inter", sans-serif;
+    }
+
+    small {
+      font-size: 15px;
+      font-style: italic;
+      line-height: 20px;
+    }
+
+    a {
+      color: #{$dark-purple};
+      &:hover {
+        color: #{$moss-green};
+      }
+      &:visited {
+        color: #{$black};
+      }
+    }
   }
 
   img {
@@ -66,53 +88,57 @@
 
 @media (max-width: 1400px) {
   .about-me {
-    h2 {
-      font-size: 48px;
-      line-height: 80px;
+    aside {
+      h2 {
+        font-size: 48px;
+        line-height: 80px;
+      }
     }
   }
 }
 
 @media (max-width: 992px) {
   .about-me {
-    h2 {
-      font-size: 38px;
-      line-height: 72px;
+    div {
+      gap: 48px;
     }
-    p {
-      width: unset;
-    }
+    aside {
+      h2 {
+        font-size: 37px;
+        line-height: 72px;
+      }
+      p {
+        width: unset;
+        line-height: 25px;
+      }
 
-    img {
-      height: 80%;
+      img {
+        height: 80%;
+      }
     }
   }
 }
 
 @media (max-width: 768px) {
   .about-me {
-    // div {
-    //   gap: 32px;
-    // }
-    h2 {
-      font-size: 32px;
-      line-height: 56px;
-    }
-
-    h3 {
-      font-size: 28px;
-      margin: 8px 0 32px 0;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 28px;
-    }
-
     aside {
       width: 100%;
-    }
 
+      h2 {
+        // font-size: 37px;
+        line-height: 56px;
+      }
+
+      h3 {
+        font-size: 28px;
+        margin: 8px 0 32px 0;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
     img {
       display: none;
     }
@@ -121,22 +147,24 @@
 
 @media (max-width: 640px) {
   .about-me {
-    h4 {
-      font-size: 20px;
-      span {
-        font-size: 24px;
+    aside {
+      h4 {
+        // font-size: 20px;
+        span {
+          font-size: 24px;
+        }
       }
-    }
-    h2 {
-      font-size: 28px;
-    }
+      h2 {
+        font-size: 32px;
+      }
 
-    h3 {
-      font-size: 26px;
-    }
+      h3 {
+        font-size: 26px;
+      }
 
-    p {
-      font-size: 16px;
+      p {
+        font-size: 16px;
+      }
     }
   }
 }
