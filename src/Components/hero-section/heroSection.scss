@@ -2,12 +2,12 @@
 
 .hero {
   // width: 100vw; // Ca créé un horizontal scroll indésirable ...
-  height: 100vh;
+  height: calc(100vh - 88px);
   overflow: hidden;
   img {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -16,7 +16,7 @@
     width: 380px;
     position: absolute;
     right: 150px;
-    bottom: 150px;
+    bottom: 100px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -38,9 +38,11 @@
 
 @media (max-width: 1400px) {
   .hero {
+    height: calc(100vh - 80px);
+
     div {
       right: 100px;
-      bottom: 100px;
+      bottom: 50px;
     }
 
     h2 {
@@ -53,7 +55,7 @@
   .hero {
     div {
       right: 50px;
-      bottom: 50px;
+      bottom: 25px;
       width: 320px;
     }
 
@@ -65,6 +67,7 @@
 
 @media (max-width: 768px) {
   .hero {
+    height: calc(100vh - 72px);
     div {
       gap: 24px;
     }
@@ -76,13 +79,20 @@
     div {
       padding: 24px;
       right: 25px;
-      bottom: 25px;
-      width: 230px;
+      bottom: 20px;
+      width: 270px;
     }
 
     h2 {
       font-size: 16px;
       margin-bottom: 0px;
     }
+  }
+}
+
+// Grands iPhones
+@media (max-width: 430px) {
+  .hero {
+    height: calc(100vh - 48px);
   }
 }

@@ -41,23 +41,33 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 640px) {
   .add-to-cart {
-    padding: 0 8px;
-  }
-  span {
-    font-size: 13px;
-    line-height: 20px;
+    padding: 8px 16px;
+    span {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }
 
-// // Grands iPhones
-// @media (max-width: 430px) {
-//   .add-to-cart {
-//     padding: 0 8px;
-//   }
-//   span {
-//     font-size: 13px;
-//     line-height: 20px;
-//   }
-// }
+@media (max-width: 576px) {
+  .add-to-cart {
+    span {
+      font-size: 13px;
+      // line-height: 20px;
+    }
+  }
+}
+
+// Grands iPhones
+@media (max-width: 430px) {
+  .add-to-cart {
+    padding: 8px;
+    span {
+      font-size: 11px;
+      line-height: 16px;
+      // font-weight: 600;
+    }
+  }
+}

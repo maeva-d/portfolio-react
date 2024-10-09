@@ -140,3 +140,21 @@
     }
   }
 }
+
+// Grands iPhones
+@media (max-width: 430px) {
+  .header {
+    height: 48px;
+    div {
+      h1 {
+        font-size: 25px;
+      }
+      nav {
+        display: none;
+        a {
+          display: none;
+        }
+      }
+    }
+  }
+}

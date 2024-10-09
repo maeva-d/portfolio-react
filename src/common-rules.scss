@@ -48,7 +48,7 @@
 
 @media (max-width: 576px) {
   .container {
-    width: 500px;
+    width: 430px;
   }
   .sections {
     padding: 24px;
@@ -58,10 +58,17 @@
 // Grands iPhones
 @media (max-width: 430px) {
   .container {
-    width: 320px;
+    // width: 320px;
+    width: 400px;
   }
-  // .sections {
-  //   font-size: 13px;
-  //   line-height: 20px;
-  // }
+  .sections {
+    padding: 32px 16px;
+  }
+}
+
+// Mon telephone
+@media (max-width: 360px) {
+  .container {
+    width: 340px;
+  }
 }

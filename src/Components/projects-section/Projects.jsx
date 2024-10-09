@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // styles
 import "../../common-rules.scss";
@@ -17,9 +17,24 @@ const Projects = () => {
   const [showDescription3, setShowDescription3] = useState(false);
   // const [showDescription4, setShowDescription4] = useState(false);
 
-  const openExternalLink = (url) => {
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportWidth(window.innerWidth);
+      window.addEventListener("resize", handleResize);
+    };
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const redirectToProject = (url) => {
     window.open(url, "_blank");
   };
+
+  console.log(viewportWidth); // OK !
 
   return (
     <section id="projects" className="projects">
@@ -31,33 +46,37 @@ const Projects = () => {
               src={tripadvisor}
               alt="projet-tripadvisor"
               onMouseEnter={() => setShowDescription1(true)}
-              onMouseLeave={() => setShowDescription1(false)}
+              // onMouseLeave={() => setShowDescription1(false)}
             />
-            {showDescription1 && (
-              <div
-                className="description"
-                onMouseEnter={() => setShowDescription1(true)}
-                onMouseLeave={() => setShowDescription1(false)}
-              >
-                <ul>
-                  <h4>Trip Advisor</h4>
-                  <h5>Projet front-end : HTML, CSS, Vanilla JS</h5>
-                  <li>Responsive sur 3 breakpoints</li>
-                  <li>Carousel de photos</li>
-                  <li>Envoi automatisé de mail</li>
-                </ul>
-                <CTAButton
-                  text={"Découvrir"}
-                  className="button"
-                  onClick={(event) => {
-                    event.preventDefault();
-                    openExternalLink(
-                      "https://tripadvisor-lereacteur.netlify.app/"
-                    );
-                  }}
-                ></CTAButton>
-              </div>
-            )}
+            {
+              showDescription1 && (
+                // ||
+                //   (viewportWidth < 640 && (
+                <div
+                  className="description"
+                  onMouseEnter={() => setShowDescription1(true)}
+                  onMouseLeave={() => setShowDescription1(false)}
+                >
+                  <ul>
+                    <h4>Trip Advisor</h4>
+                    <h5>Projet front-end : HTML, CSS, Vanilla JS</h5>
+                    <li>Responsive sur 3 breakpoints</li>
+                    <li>Carousel de photos</li>
+                    <li>Envoi automatisé de mail</li>
+                  </ul>
+                  <CTAButton
+                    text={"Découvrir"}
+                    className="button"
+                    onClick={() => {
+                      redirectToProject(
+                        "https://tripadvisor-lereacteur.netlify.app/"
+                      );
+                    }}
+                  ></CTAButton>
+                </div>
+              )
+              // ))
+            }
           </article>
           {/* VINTED */}
           {/* <article>
@@ -97,35 +116,39 @@ const Projects = () => {
               src={marvel}
               alt="projet-marvel"
               onMouseEnter={() => setShowDescription3(true)}
-              onMouseLeave={() => setShowDescription3(false)}
+              // onMouseLeave={() => setShowDescription3(false)}
             />
-            {showDescription3 && (
-              <div
-                className="description"
-                onMouseEnter={() => setShowDescription3(true)}
-                onMouseLeave={() => setShowDescription3(false)}
-              >
-                <ul>
-                  <h4>Marvel</h4>
-                  <h5>
-                    Projet full-stack : React, SCSS, NodeJS, MongoDB, express
-                  </h5>
-                  {/* <li>Inscription et connexion</li> */}
-                  <li>Récupération de données</li>
-                  <li>Système de favoris</li>
-                  <li>Pagination</li>
-                  <li>Barre de recherche</li>
-                </ul>
-                <CTAButton
-                  text={"Découvrir"}
-                  className="button"
-                  onClick={(event) => {
-                    event.preventDefault();
-                    openExternalLink("https://maeva-d-marvel.netlify.app/");
-                  }}
-                ></CTAButton>
-              </div>
-            )}
+            {
+              showDescription3 && (
+                // ||
+                //   (viewportWidth <= 640 && (
+                <div
+                  className="description"
+                  onMouseEnter={() => setShowDescription3(true)}
+                  onMouseLeave={() => setShowDescription3(false)}
+                >
+                  <ul>
+                    <h4>L'univers Marvel</h4>
+                    <h5>
+                      Projet full-stack : React, SCSS, NodeJS, MongoDB, express
+                    </h5>
+                    {/* <li>Inscription et connexion</li> */}
+                    <li>Sauvergarde de favoris grâce au local storage </li>
+                    <li>Récupération de données</li>
+                    <li>Pagination</li>
+                    <li>Barre de recherche</li>
+                  </ul>
+                  <CTAButton
+                    text={"Découvrir"}
+                    className="button"
+                    onClick={() => {
+                      redirectToProject("https://maeva-d-marvel.netlify.app/");
+                    }}
+                  ></CTAButton>
+                </div>
+              )
+              // ))
+            }
           </article>
         </menu>
       </div>

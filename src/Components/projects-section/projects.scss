@@ -44,12 +44,10 @@
     padding: 56px;
     opacity: 0;
     transition: opacity 0.3s ease-in, filter 0.5s ease-in;
-
     &:hover {
       opacity: 1;
       transition: opacity 0.3s ease-in, filter 0.5s ease-in;
     }
-
     // Fonctionne pas ?
     &:not(:hover) {
       opacity: 0;
@@ -137,13 +135,17 @@
       // line-height: 50px;
     }
 
-    // menu {
-    //   flex-wrap: nowrap;
-    //   flex-direction: column;
+    // article {
+    //   div {
+    .description {
+      opacity: 1;
+      display: block;
+    }
+    //   }
     // }
 
-    // article {
-    //   width: unset;
+    // .description {
+    //   display: flex;
     // }
   }
 }

@@ -121,3 +121,23 @@
     }
   }
 }
+
+//Latest iPhones
+@media (max-width: 430px) {
+  .skills {
+    div {
+      h2 {
+        font-size: 15px;
+      }
+      small {
+        font-size: 12px;
+      }
+      .column {
+        width: calc(50% - 13px);
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
