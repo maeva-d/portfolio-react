@@ -141,7 +141,6 @@
   }
 }
 
-// Ce que je vois sur mon téléphone :
 @media (max-width: 430px) {
   .header {
     height: 48px;
@@ -153,16 +152,37 @@
       justify-content: space-between;
       height: 100%;
       h1 {
-        font-size: 20px;
+        font-size: 22px;
         line-height: unset;
-        width: 35%;
+        width: 40%;
       }
       nav {
+        margin-left: 24px;
         a {
-          font-size: 12px;
           &:not(:last-child) {
             margin-right: 16px;
           }
+        }
+      }
+    }
+  }
+}
+
+// Ce que je vois sur mon téléphone :
+@media (max-width: 360px) {
+  .header {
+    div {
+      h1 {
+        font-size: 20px;
+        width: 48%;
+      }
+      nav {
+        margin-left: 32px;
+        a {
+          font-size: 12px;
+          // &:not(:last-child) {
+          //   margin-right: 16px;
+          // }
         }
       }
     }
