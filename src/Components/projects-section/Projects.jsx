@@ -133,7 +133,7 @@ const Projects = () => {
                       Projet full-stack : React, SCSS, NodeJS, MongoDB, express
                     </h5>
                     {/* <li>Inscription et connexion</li> */}
-                    <li>Sauvergarde de favoris grâce au local storage </li>
+                    <li>Favoris grâce au local storage </li>
                     <li>Récupération de données</li>
                     <li>Pagination</li>
                     <li>Barre de recherche</li>

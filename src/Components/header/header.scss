@@ -141,18 +141,28 @@
   }
 }
 
-// Grands iPhones
+// Ce que je vois sur mon téléphone :
 @media (max-width: 430px) {
   .header {
     height: 48px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     div {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 100%;
       h1 {
-        font-size: 25px;
+        font-size: 20px;
+        line-height: unset;
+        width: 35%;
       }
       nav {
-        display: none;
         a {
-          display: none;
+          font-size: 12px;
+          &:not(:last-child) {
+            margin-right: 16px;
+          }
         }
       }
     }

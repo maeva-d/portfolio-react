@@ -53,7 +53,7 @@ const Header = () => {
           <a href="#about-me">À propos de moi</a>
           {/* <a href="#skills">Compétences</a> */}
           <a href="#projects">Projets</a>
-          <a href="#contact-me">Contactez-moi</a>
+          <a href="#contact-me">Me contacter</a>
         </nav>
       </div>
     </header>
