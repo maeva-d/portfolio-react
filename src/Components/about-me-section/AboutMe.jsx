@@ -1,5 +1,6 @@
 // import { Link } from "react-router-dom";
 // import { useState, useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 // styles
 import "../../common-rules.scss";
 import "./aboutMe.scss";
@@ -50,7 +51,7 @@ const AboutMe = () => {
           </small>
           {/* <Link to="/learn-more">En savoir plus</Link> */}
         </aside>
-        <img src={image} alt="code" />
+        <LazyLoadImage src={image} alt="code" />
       </div>
     </section>
   );

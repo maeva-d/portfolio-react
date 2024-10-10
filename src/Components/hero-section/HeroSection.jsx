@@ -1,4 +1,5 @@
 // import { useRef } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 // Style
 import "../hero-section/heroSection.scss";
 // Components
@@ -13,7 +14,7 @@ const handleClick = () => {
 const HeroSection = () => {
   return (
     <section className="hero">
-      <img src={heroImage} alt="hero-image-JS" />
+      <LazyLoadImage src={heroImage} alt="hero-image-JS" />
       <div>
         <h2>
           Une conception exquise, codée avec précision pour un portfolio élégant

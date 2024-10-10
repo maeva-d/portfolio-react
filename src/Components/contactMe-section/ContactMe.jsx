@@ -1,14 +1,14 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 // styles
 import "../../common-rules.scss";
 import "./contactMe.scss";
-
-//pictures & icons
+//pictures
 import image from "../../assets/pictures/laptop-jewels-unsplash.jpg";
 
 const ContactMe = () => {
   return (
     <section id="contact-me" className="contact-me">
-      <img src={image} alt="keyboard" />
+      <LazyLoadImage src={image} alt="keyboard" />
       <aside>
         <div>
           <h2>Contactez-moi</h2>

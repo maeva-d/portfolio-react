@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 // styles
 import "../../common-rules.scss";
 import "./projects.scss";
@@ -42,7 +42,7 @@ const Projects = () => {
         <h2>Projets</h2>
         <menu>
           <article>
-            <img
+            <LazyLoadImage
               src={tripadvisor}
               alt="projet-tripadvisor"
               onMouseEnter={() => setShowDescription1(true)}
@@ -80,7 +80,7 @@ const Projects = () => {
           </article>
           {/* VINTED */}
           {/* <article>
-            <img
+            <LazyLoadImage
               src={vinted}
               alt="projet-vinted"
               onMouseEnter={() => setShowDescription2(true)}
@@ -112,7 +112,7 @@ const Projects = () => {
           </article> */}
           {/* MARVEL */}
           <article>
-            <img
+            <LazyLoadImage
               src={marvel}
               alt="projet-marvel"
               onMouseEnter={() => setShowDescription3(true)}
