@@ -94,13 +94,8 @@
   .hero {
     height: calc(100vh - 48px);
     div {
-      //// first option :
-      // left: 0;
-      // right: 0;
-      // margin-inline: auto;
-      //// second option :
       right: 50%;
-      bottom: calc(50% - 48px);
+      bottom: 50%;
       transform: translate(50%, 50%);
     }
   }
