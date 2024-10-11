@@ -10,7 +10,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-  const modalRoot = document.getElementById("modal-root");
+  const modalRoot = document.getElementById("modal");
 
   useEffect(() => {
     const handleScroll = () => {
