@@ -76,7 +76,7 @@ const Projects = () => {
                     className="button"
                     onClick={() => {
                       redirectToProject(
-                        "https://tripadvisor-lereacteur.netlify.app/"
+                        "https://maeva-delrue-tripadvisor.netlify.app/"
                       );
                     }}
                   ></CTAButton>
