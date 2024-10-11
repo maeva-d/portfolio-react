@@ -21,7 +21,11 @@ const NavModal = ({ onClose }) => {
             />
           </svg>
         </div>
-        {/* <button onClick={onClose}>Close</button> */}
+        <nav>
+          <a href="#about-me">À propos de moi</a>
+          <a href="#projects">Projets</a>
+          <a href="#contact-me">Me contacter</a>
+        </nav>
       </menu>
     </section>
   );
