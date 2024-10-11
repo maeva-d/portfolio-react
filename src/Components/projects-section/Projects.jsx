@@ -41,7 +41,7 @@ const Projects = () => {
   //   }
   // };
 
-  console.log(viewportWidth); // OK !
+  console.log("viewportWidth", viewportWidth); // OK !
 
   return (
     <section id="projects" className="projects">
