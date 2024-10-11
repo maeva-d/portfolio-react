@@ -171,26 +171,11 @@
 @media (max-width: 430px) {
   .header {
     height: 48px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     div {
-      // flex-direction: row;
-      // justify-content: space-between;
-      // height: 100%;
       h1 {
         font-size: 23px;
         line-height: unset;
-        // width: 40%;
       }
-      // nav {
-      //   margin-left: 24px;
-      //   a {
-      //     &:not(:last-child) {
-      //       margin-right: 16px;
-      //     }
-      //   }
-      // }
     }
   }
 }
@@ -203,15 +188,6 @@
         font-size: 21px;
         margin-left: 24px;
       }
-      // nav {
-      //   margin-left: 32px;
-      //   a {
-      //     font-size: 12px;
-      //     // &:not(:last-child) {
-      //     //   margin-right: 16px;
-      //     // }
-      //   }
-      // }
     }
   }
 }
