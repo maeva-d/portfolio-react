@@ -45,11 +45,6 @@
   padding: 56px;
   opacity: 1;
   transition: opacity 0.3s ease-in, filter 0.5s ease-in;
-  // &:hover {
-  //   opacity: 1;
-  //   transition: opacity 0.3s ease-in, filter 0.5s ease-in;
-  // }
-
   &:not(:hover) {
     opacity: 0;
     transition: opacity 0.3s ease-in, filter 0.5s ease-in;
@@ -97,7 +92,6 @@
 }
 
 @media (max-width: 1200px) {
-  // .projects {
   .description {
     padding: 48px;
 
@@ -107,7 +101,6 @@
     }
   }
 }
-// }
 
 @media (max-width: 992px) {
   .projects {
@@ -159,6 +152,23 @@
     button {
       bottom: 32px;
       right: 32px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .description {
+    padding: 24px;
+
+    ul {
+      margin-bottom: 40px;
+      li {
+        font-size: 15px;
+      }
+      button {
+        bottom: 24px;
+        right: 24px;
+      }
     }
   }
 }

@@ -1,8 +1,7 @@
 @import "../../variables.scss";
 
 .hero {
-  // width: 100vw; // Ca créé un horizontal scroll indésirable ...
-  height: calc(100vh - 88px);
+  height: calc(100vh - 88px); // taille du header
   overflow: hidden;
   img {
     position: relative;
@@ -22,17 +21,17 @@
     gap: 32px;
     background-color: transparent;
     backdrop-filter: blur(16px);
-  }
 
-  h2 {
-    font-family: "baserkvvile";
-    color: #{$chinese-white};
-    font-size: 24px;
-    font-weight: 100;
-    text-transform: uppercase;
-    line-height: 40px;
-    text-align: right;
-    margin-bottom: 8px;
+    h2 {
+      font-family: "baserkvvile";
+      color: #{$chinese-white};
+      font-size: 24px;
+      font-weight: 100;
+      text-transform: uppercase;
+      line-height: 40px;
+      text-align: right;
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -43,10 +42,10 @@
     div {
       right: 100px;
       bottom: 50px;
-    }
 
-    h2 {
-      font-size: 22px;
+      h2 {
+        font-size: 22px;
+      }
     }
   }
 }
@@ -57,10 +56,10 @@
       right: 50px;
       bottom: 25px;
       width: 320px;
-    }
 
-    h2 {
-      font-size: 20px;
+      h2 {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -81,18 +80,28 @@
       right: 25px;
       bottom: 20px;
       width: 270px;
-    }
 
-    h2 {
-      font-size: 16px;
-      margin-bottom: 0px;
+      h2 {
+        font-size: 16px;
+        margin-bottom: 0px;
+        line-height: 32px;
+      }
     }
   }
 }
 
-// Grands iPhones
 @media (max-width: 430px) {
   .hero {
     height: calc(100vh - 48px);
+    div {
+      //// first option :
+      left: 0;
+      right: 0;
+      margin-inline: auto;
+      //// second option :
+      // right: 50%;
+      // bottom: 50%;
+      // transform: translate(50%, 50%);
+    }
   }
 }
