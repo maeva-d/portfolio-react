@@ -64,3 +64,13 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: 576px) {
+  .CTA-Button {
+    font-size: 13px;
+    &:hover::before,
+    &:hover::after {
+      transform: unset;
+    }
+  }
+}

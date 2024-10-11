@@ -5,16 +5,15 @@ import "../../common-rules.scss";
 import "./projects.scss";
 // Components
 import CTAButton from "../CTA-button/CTAButton";
-
 // pictures
 import tripadvisor from "../../assets/pictures/tripadvisor.png";
 // import vinted from "../../assets/pictures/vinted.png";
 import marvel from "../../assets/pictures/marvel.png";
 
 const Projects = () => {
-  const [showDescription1, setShowDescription1] = useState(false);
+  const [showDescTripAdvisor, setShowDescTripAdvisor] = useState(false);
   // const [showDescription2, setShowDescription2] = useState(false);
-  const [showDescription3, setShowDescription3] = useState(false);
+  const [showDescMarvel, setShowDescMarvel] = useState(false);
   // const [showDescription4, setShowDescription4] = useState(false);
 
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
@@ -34,6 +33,14 @@ const Projects = () => {
     window.open(url, "_blank");
   };
 
+  // const handleDescriptionsShowing = (setDescriptionState) => {
+  //   if (window.innerWidth > 640) {
+  //     setDescriptionState(false);
+  //   } else if (window.innerWidth <= 640) {
+  //     setDescriptionState(true);
+  //   }
+  // };
+
   console.log(viewportWidth); // OK !
 
   return (
@@ -45,17 +52,17 @@ const Projects = () => {
             <LazyLoadImage
               src={tripadvisor}
               alt="projet-tripadvisor"
-              onMouseEnter={() => setShowDescription1(true)}
-              // onMouseLeave={() => setShowDescription1(false)}
+              onMouseEnter={() => {
+                if (window.innerWidth > 640) setShowDescTripAdvisor(true);
+              }}
             />
-            {
-              showDescription1 && (
-                // ||
-                //   (viewportWidth < 640 && (
+            {showDescTripAdvisor ||
+              (viewportWidth < 640 && (
                 <div
                   className="description"
-                  onMouseEnter={() => setShowDescription1(true)}
-                  onMouseLeave={() => setShowDescription1(false)}
+                  onMouseLeave={() => {
+                    if (window.innerWidth > 640) setShowDescTripAdvisor(false);
+                  }}
                 >
                   <ul>
                     <h4>Trip Advisor</h4>
@@ -74,9 +81,7 @@ const Projects = () => {
                     }}
                   ></CTAButton>
                 </div>
-              )
-              // ))
-            }
+              ))}
           </article>
           {/* VINTED */}
           {/* <article>
@@ -115,17 +120,17 @@ const Projects = () => {
             <LazyLoadImage
               src={marvel}
               alt="projet-marvel"
-              onMouseEnter={() => setShowDescription3(true)}
-              // onMouseLeave={() => setShowDescription3(false)}
+              onMouseEnter={() => {
+                if (window.innerWidth > 640) setShowDescMarvel(true);
+              }}
             />
-            {
-              showDescription3 && (
-                // ||
-                //   (viewportWidth <= 640 && (
+            {showDescMarvel ||
+              (viewportWidth <= 640 && (
                 <div
                   className="description"
-                  onMouseEnter={() => setShowDescription3(true)}
-                  onMouseLeave={() => setShowDescription3(false)}
+                  onMouseLeave={() => {
+                    if (window.innerWidth > 640) setShowDescMarvel(false);
+                  }}
                 >
                   <ul>
                     <h4>L'univers Marvel</h4>
@@ -146,9 +151,7 @@ const Projects = () => {
                     }}
                   ></CTAButton>
                 </div>
-              )
-              // ))
-            }
+              ))}
           </article>
         </menu>
       </div>
