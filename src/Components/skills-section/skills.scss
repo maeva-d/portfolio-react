@@ -27,15 +27,11 @@
 
     h2 {
       font-size: 21px;
-      // width: 700px;
       line-height: 40px;
       display: inline-block;
       margin-bottom: 96px;
     }
 
-    // span: {
-    //   font-style: italic;
-    // }
     small {
       color: darkred;
     }
@@ -49,9 +45,6 @@
       justify-content: space-evenly;
     }
 
-    // .row:not(:last-child) {
-    //   margin-bottom: 40px;
-    // }
     .column {
       display: flex;
       flex-direction: column;
@@ -87,8 +80,8 @@
       }
 
       .row {
-        justify-content: space-between;
-        flex-wrap: wrap;
+        justify-content: unset;
+        flex-wrap: nowrap;
         gap: 24px;
       }
 
@@ -113,7 +106,7 @@
         font-size: 13px;
       }
       .column {
-        width: calc(50% - 16px);
+        width: calc(60% - 16px);
         p {
           font-size: 18px;
         }
@@ -133,7 +126,8 @@
         font-size: 12px;
       }
       .column {
-        width: calc(50% - 13px);
+        // width: calc(50% - 13px);
+
         p {
           font-size: 16px;
         }
