@@ -95,13 +95,13 @@
     height: calc(100vh - 48px);
     div {
       //// first option :
-      left: 0;
-      right: 0;
-      margin-inline: auto;
+      // left: 0;
+      // right: 0;
+      // margin-inline: auto;
       //// second option :
-      // right: 50%;
-      // bottom: 50%;
-      // transform: translate(50%, 50%);
+      right: 50%;
+      bottom: 50%;
+      transform: translate(50%, 50%);
     }
   }
 }
