@@ -1,6 +1,15 @@
 import "./nav-modal.scss";
+import cv from "../../assets/pictures/alternance.pdf";
+import { useEffect } from "react";
 
 const NavModal = ({ onClose }) => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "scroll";
+    };
+  }, []);
+
   return (
     <section className="nav-modal">
       <menu>
@@ -25,6 +34,9 @@ const NavModal = ({ onClose }) => {
           <a href="#about-me">À propos de moi</a>
           <a href="#projects">Projets</a>
           <a href="#contact-me">Me contacter</a>
+          <a href={cv} download="My_CV.pdf">
+            CV
+          </a>
         </nav>
       </menu>
     </section>

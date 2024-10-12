@@ -12,9 +12,8 @@ import marvel from "../../assets/pictures/marvel.png";
 
 const Projects = () => {
   const [showDescTripAdvisor, setShowDescTripAdvisor] = useState(false);
-  // const [showDescription2, setShowDescription2] = useState(false);
+  // const [showDescriptionVinted, setShowDescriptionVinted] = useState(false);
   const [showDescMarvel, setShowDescMarvel] = useState(false);
-  // const [showDescription4, setShowDescription4] = useState(false);
 
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
@@ -88,14 +87,14 @@ const Projects = () => {
             <LazyLoadImage
               src={vinted}
               alt="projet-vinted"
-              onMouseEnter={() => setShowDescription2(true)}
-              onMouseLeave={() => setShowDescription2(false)}
+              onMouseEnter={() => setShowDescriptionVinted(true)}
+              onMouseLeave={() => setShowDescriptionVinted(false)}
             />
-            {showDescription2 && (
+            {showDescriptionVinted && (
               <div
                 className="description"
-                onMouseEnter={() => setShowDescription2(true)}
-                onMouseLeave={() => setShowDescription2(false)}
+                onMouseEnter={() => setShowDescriptionVinted(true)}
+                onMouseLeave={() => setShowDescriptionVinted(false)}
               >
                 <ul>
                   <h4>Vinted</h4>

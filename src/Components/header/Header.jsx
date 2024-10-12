@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
+import cv from "../../assets/pictures/alternance.pdf";
 // Style
 import "./header.scss";
 import "../../common-rules.scss";
@@ -74,6 +75,9 @@ const Header = () => {
           <a href="#about-me">À propos de moi</a>
           <a href="#projects">Projets</a>
           <a href="#contact-me">Me contacter</a>
+          <a href={cv} download="My_CV.pdf">
+            CV
+          </a>
         </nav>
         {showModal &&
           createPortal(
