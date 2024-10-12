@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 // import { useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 // styles
@@ -24,11 +23,7 @@ const AboutMe = () => {
   // }, []);
 
   return (
-    <section
-      id="about-me"
-      // className={`about-me ${isVisible ? "visible" : "hidden"}`}
-      className="about-me"
-    >
+    <section id="about-me" className="about-me">
       <div className="container sections">
         <aside>
           <h4>
