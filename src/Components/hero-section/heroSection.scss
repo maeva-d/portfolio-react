@@ -21,6 +21,8 @@
     gap: 32px;
     background-color: transparent;
     backdrop-filter: blur(16px);
+    animation: fadeIn 2s ease-out 1.5s forwards;
+    opacity: 0;
 
     h2 {
       font-family: "baserkvvile";
@@ -31,9 +33,15 @@
       line-height: 40px;
       text-align: right;
       margin-bottom: 8px;
-      animation: an 2s ease-out 1 both;
+      animation: fadeIn 2s ease-out 1.5s forwards;
+      opacity: 0;
     }
-    @keyframes an {
+
+    button {
+      opacity: 0;
+      animation: fadeIn 1s ease-out 4s forwards;
+    }
+    @keyframes fadeIn {
       from {
         opacity: 0;
         transform: perspective(500px) translate3d(-35px, -40px, -150px)
