@@ -32,16 +32,6 @@ const Projects = () => {
     window.open(url, "_blank");
   };
 
-  // const handleDescriptionsShowing = (setDescriptionState) => {
-  //   if (window.innerWidth > 640) {
-  //     setDescriptionState(false);
-  //   } else if (window.innerWidth <= 640) {
-  //     setDescriptionState(true);
-  //   }
-  // };
-
-  console.log("viewportWidth", viewportWidth); // OK !
-
   return (
     <section id="projects" className="projects">
       <div className="container sections">

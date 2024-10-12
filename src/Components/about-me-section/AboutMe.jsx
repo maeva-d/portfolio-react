@@ -44,7 +44,6 @@ const AboutMe = () => {
             </a>
             .
           </small>
-          {/* <Link to="/learn-more">En savoir plus</Link> */}
         </aside>
         <LazyLoadImage src={image} alt="code" />
       </div>

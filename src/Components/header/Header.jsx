@@ -21,13 +21,11 @@ const Header = () => {
         setIsScrolled(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [showModal]);
 
   return (
     <header className={`header ${isScrolled && "transparent"}`}>
