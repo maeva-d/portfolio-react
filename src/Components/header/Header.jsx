@@ -75,7 +75,7 @@ const Header = () => {
           <a href="#about-me">À propos de moi</a>
           <a href="#projects">Projets</a>
           <a href="#contact-me">Me contacter</a>
-          <a href={cv} download="My_CV.pdf">
+          <a href={cv} download="CV_Maeva_Delrue_DEVWEB.pdf">
             CV
           </a>
         </nav>
