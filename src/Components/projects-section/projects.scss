@@ -16,91 +16,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    // article {
-    //   position: relative;
-    //   width: calc(50% - 40px);
-    //   margin-bottom: 48px;
-
-    //   img {
-    //     width: 100%;
-    //     height: 370px;
-    //     object-fit: cover;
-    //     filter: blur(5px) grayscale(80%);
-    //   }
-    // }
   }
 }
-
-// .description {
-//   background-color: rgba($black, 0.8);
-//   position: absolute;
-//   bottom: 0px;
-//   left: 0px;
-//   // transform: translate(-50%, -50%);
-//   width: 100%;
-//   height: 100%;
-//   justify-content: center;
-//   align-content: center;
-//   padding: 56px;
-//   opacity: 1;
-//   transition: opacity 0.3s ease-in, filter 0.5s ease-in;
-//   &:not(:hover) {
-//     opacity: 0;
-//     transition: opacity 0.3s ease-in, filter 0.5s ease-in;
-//   }
-
-//   h4,
-//   h5,
-//   li {
-//     font-family: "inter", sans-serif;
-//     color: #{$chinese-white};
-//     opacity: 1;
-//   }
-
-//   h4,
-//   h5 {
-//     text-transform: uppercase;
-//     margin-bottom: 16px;
-//   }
-
-//   h4,
-//   li {
-//     font-weight: 500;
-//   }
-
-//   h4 {
-//     font-size: 18px;
-//     letter-spacing: 1px;
-//   }
-
-//   h5 {
-//     font-weight: 200;
-//     line-height: 24px;
-//   }
-
-//   li {
-//     line-height: 24px;
-//   }
-
-//   button {
-//     position: absolute;
-//     bottom: 56px;
-//     right: 56px;
-//     cursor: pointer;
-//   }
-// }
-
-// @media (max-width: 1200px) {
-//   .description {
-//     padding: 48px;
-
-//     button {
-//       bottom: 48px;
-//       right: 48px;
-//     }
-//   }
-// }
 
 @media (max-width: 992px) {
   .projects {
@@ -113,10 +30,6 @@
     menu {
       flex-wrap: nowrap;
       flex-direction: column;
-
-      // article {
-      //   width: unset;
-      // }
     }
   }
 }
@@ -126,49 +39,5 @@
     h2 {
       font-size: 28px;
     }
-
-    // menu {
-    //   article {
-    //     img {
-    //       filter: blur(3px) grayscale(80%);
-    //     }
-    //   }
-    // }
   }
-
-  // .description {
-  //   background-color: rgba($black, 0.7);
-  //   opacity: 1;
-  //   &:not(:hover) {
-  //     opacity: 1;
-  //   }
-  // }
 }
-
-// @media (max-width: 576px) {
-//   .description {
-//     padding: 32px;
-
-//     button {
-//       bottom: 32px;
-//       right: 32px;
-//     }
-//   }
-// }
-
-// @media (max-width: 360px) {
-//   .description {
-//     padding: 24px;
-
-//     ul {
-//       margin-bottom: 40px;
-//       li {
-//         font-size: 15px;
-//       }
-//       button {
-//         bottom: 24px;
-//         right: 24px;
-//       }
-//     }
-//   }
-// }

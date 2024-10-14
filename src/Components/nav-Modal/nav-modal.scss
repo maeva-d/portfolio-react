@@ -1,24 +1,15 @@
 @import "../../variables.scss";
 
 .nav-modal {
-  background-color: rgba(#000, 0.8);
+  background-color: rgba(#000, 0.3);
   position: fixed;
   top: 0;
   z-index: 10000;
-  width: 50vw;
+  width: 100vw;
   height: 100vh;
-  animation: slide 0.3s ease-in-out;
-  @keyframes slide {
-    from {
-      transform: translateX(-50px);
-    }
-    to {
-      transform: translateX(0px);
-    }
-  }
 
   menu {
-    width: 100%;
+    width: 50%;
     height: 100%;
     background-color: #{$chinese-white};
     display: flex;
@@ -27,6 +18,15 @@
     align-items: center;
     position: relative;
     gap: 40px;
+    animation: slide 0.3s ease-in-out;
+    @keyframes slide {
+      from {
+        transform: translateX(-50px);
+      }
+      to {
+        transform: translateX(0px);
+      }
+    }
 
     div {
       display: flex;
