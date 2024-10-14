@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 // styles
 import "../../common-rules.scss";
@@ -13,7 +13,7 @@ import marvel from "../../assets/pictures/marvel.png";
 const Projects = () => {
   // const [showDescTripAdvisor, setShowDescTripAdvisor] = useState(false);
   // const [showDescriptionVinted, setShowDescriptionVinted] = useState(false);
-  const [showDescMarvel, setShowDescMarvel] = useState(false);
+  // const [showDescMarvel, setShowDescMarvel] = useState(false);
 
   // useEffect(() => {
   //   const handleResize = () => {
@@ -109,38 +109,38 @@ const Projects = () => {
             <LazyLoadImage
               src={marvel}
               alt="projet-marvel"
-              onMouseEnter={() => {
-                if (window.innerWidth > 640) setShowDescMarvel(true);
-              }}
+              // onMouseEnter={() => {
+              //   if (window.innerWidth > 640) setShowDescMarvel(true);
+              // }}
             />
-            {showDescMarvel ||
-              (window.innerWidth <= 640 && (
-                <div
-                  className="description"
-                  onMouseLeave={() => {
-                    if (window.innerWidth > 640) setShowDescMarvel(false);
-                  }}
-                >
-                  <ul>
-                    <h4>L'univers Marvel</h4>
-                    <h5>
-                      Projet full-stack : React, SCSS, NodeJS, MongoDB, express
-                    </h5>
-                    {/* <li>Inscription et connexion</li> */}
-                    <li>Favoris grâce au local storage </li>
-                    <li>Récupération de données</li>
-                    <li>Pagination</li>
-                    <li>Barre de recherche</li>
-                  </ul>
-                  <CTAButton
-                    text={"Découvrir"}
-                    className="button"
-                    onClick={() => {
-                      redirectToProject("https://maeva-d-marvel.netlify.app/");
-                    }}
-                  ></CTAButton>
-                </div>
-              ))}
+            {/* {showDescMarvel ||
+              (window.innerWidth <= 640 && ( */}
+            <div
+              className="description"
+              // onMouseLeave={() => {
+              //   if (window.innerWidth > 640) setShowDescMarvel(false);
+              // }}
+            >
+              <ul>
+                <h4>L'univers Marvel</h4>
+                <h5>
+                  Projet full-stack : React, SCSS, NodeJS, MongoDB, express
+                </h5>
+                {/* <li>Inscription et connexion</li> */}
+                <li>Favoris grâce au local storage </li>
+                <li>Récupération de données</li>
+                <li>Pagination</li>
+                <li>Barre de recherche</li>
+              </ul>
+              <CTAButton
+                text={"Découvrir"}
+                className="button"
+                onClick={() => {
+                  redirectToProject("https://maeva-d-marvel.netlify.app/");
+                }}
+              ></CTAButton>
+            </div>
+            {/* ))} */}
           </article>
         </menu>
       </div>
