@@ -1,11 +1,8 @@
-// import { useState } from "react";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
 // styles
 import "../../common-rules.scss";
 import "./projects.scss";
 // Components
 import OneProject from "./OneProject";
-// import CTAButton from "../CTA-button/CTAButton";
 // pictures
 import tripadvisor from "../../assets/pictures/tripadvisor.png";
 // import vinted from "../../assets/pictures/vinted.png";
@@ -58,64 +55,20 @@ const Projects = () => {
             feature4="Pagination"
             projectURL="https://maeva-d-marvel.netlify.app/"
           />
-          {/* <article>
-            <LazyLoadImage
-              src={tripadvisor}
-              alt="projet-tripadvisor"
-            />
-            <div
-              className="description"
-            >
-              <ul>
-                <h4>Trip Advisor</h4>
-                <h5>Projet front-end : HTML, CSS, Vanilla JS</h5>
-                <li>Responsive sur 3 breakpoints</li>
-                <li>Carousel de photos</li>
-                <li>Envoi automatisé de mail</li>
-              </ul>
-              <CTAButton
-                text={"Découvrir"}
-                className="button"
-                onClick={() => {
-                  redirectToProject(
-                    "https://maeva-delrue-tripadvisor.netlify.app/"
-                  );
-                }}
-              ></CTAButton>
-            </div>
-          </article> */}
-          {/* VINTED */}
-          {/* <article>
-            <LazyLoadImage
-              src={vinted}
-              alt="projet-vinted"
-              onMouseEnter={() => setShowDescriptionVinted(true)}
-              onMouseLeave={() => setShowDescriptionVinted(false)}
-            />
-            {showDescriptionVinted && (
-              <div
-                className="description"
-                onMouseEnter={() => setShowDescriptionVinted(true)}
-                onMouseLeave={() => setShowDescriptionVinted(false)}
-              >
-                <ul>
-                  <h4>Vinted</h4>
-                  <h5>Projet full-stack : React, NodeJS, MongoDB, express</h5>
-                  <li>Inscription et connexion</li>
-                  <li>Récupération de données</li>
-                  <li>Publication dannonces</li>
-                  <li>Barre de recherche</li>
-                  <li>Paiement</li>
-                  <li>Upload de photos</li>
-                </ul>
-                <CTAButton
-                  text={"Découvrir"}
-                  className="button"
-                  // onClick={() => openExternalLink("foo")}
-                ></CTAButton>
-              </div>
-            )}
-          </article> */}
+          {/* -- VINTED -- */}
+          {/* <OneProject
+            img={vinted}
+            alt="vinted"
+            title="Vinted"
+            stack="Full-stack : React, NodeJS, MongoDB, Express"
+            feature1="Inscription et connexion"
+            feature2="Récupération de données"
+            feature3="Publication d'annonces"
+            feature4="Barre de recherche"
+            feature5="Upload de photos"
+            feature6="Paiement (Stripe)"
+            projectURL="foo"
+          /> */}
         </menu>
       </div>
     </section>

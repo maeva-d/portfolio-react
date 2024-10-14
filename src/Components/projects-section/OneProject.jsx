@@ -12,29 +12,13 @@ const OneProject = ({
   feature3,
   feature4,
   feature5,
+  feature6,
   projectURL,
 }) => {
-  //   const redirectToProject = (url) => {
-  //     window.open(url, "_blank");
-  //   };
-
   return (
     <article className="one-project">
-      <LazyLoadImage
-        src={img}
-        alt={alt}
-        // onMouseEnter={() => {
-        //   if (window.innerWidth > 640) setShowDescTripAdvisor(true);
-        // }}
-      />
-      {/* {showDescTripAdvisor ||
-    (window.innerWidth < 640 && ( */}
-      <div
-      // className="description"
-      // onMouseLeave={() => {
-      //   if (window.innerWidth > 640) setShowDescTripAdvisor(false);
-      // }}
-      >
+      <LazyLoadImage src={img} alt={alt} />
+      <div>
         <ul>
           <h4>{title}</h4>
           <h5>{stack}</h5>
@@ -43,6 +27,7 @@ const OneProject = ({
           <li>{feature3}</li>
           <li>{feature4}</li>
           <li>{feature5}</li>
+          <li>{feature6}</li>
         </ul>
         <CTAButton
           text={"Découvrir"}
@@ -52,7 +37,6 @@ const OneProject = ({
           }}
         ></CTAButton>
       </div>
-      {/* ))} */}
     </article>
   );
 };
