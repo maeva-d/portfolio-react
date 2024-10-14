@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 // styles
 import "../../common-rules.scss";
@@ -11,26 +11,26 @@ import tripadvisor from "../../assets/pictures/tripadvisor.png";
 import marvel from "../../assets/pictures/marvel.png";
 
 const Projects = () => {
-  const [showDescTripAdvisor, setShowDescTripAdvisor] = useState(false);
+  // const [showDescTripAdvisor, setShowDescTripAdvisor] = useState(false);
   // const [showDescriptionVinted, setShowDescriptionVinted] = useState(false);
   const [showDescMarvel, setShowDescMarvel] = useState(false);
 
-  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setViewportWidth(window.innerWidth);
+  //     window.addEventListener("resize", handleResize);
+  //   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      setViewportWidth(window.innerWidth);
-      window.addEventListener("resize", handleResize);
-    };
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   const redirectToProject = (url) => {
     window.open(url, "_blank");
   };
+
+  console.log(window.innerWidth);
 
   return (
     <section id="projects" className="projects">
@@ -41,36 +41,36 @@ const Projects = () => {
             <LazyLoadImage
               src={tripadvisor}
               alt="projet-tripadvisor"
-              onMouseEnter={() => {
-                if (window.innerWidth > 640) setShowDescTripAdvisor(true);
-              }}
+              // onMouseEnter={() => {
+              //   if (window.innerWidth > 640) setShowDescTripAdvisor(true);
+              // }}
             />
-            {showDescTripAdvisor ||
-              (viewportWidth < 640 && (
-                <div
-                  className="description"
-                  onMouseLeave={() => {
-                    if (window.innerWidth > 640) setShowDescTripAdvisor(false);
-                  }}
-                >
-                  <ul>
-                    <h4>Trip Advisor</h4>
-                    <h5>Projet front-end : HTML, CSS, Vanilla JS</h5>
-                    <li>Responsive sur 3 breakpoints</li>
-                    <li>Carousel de photos</li>
-                    <li>Envoi automatisé de mail</li>
-                  </ul>
-                  <CTAButton
-                    text={"Découvrir"}
-                    className="button"
-                    onClick={() => {
-                      redirectToProject(
-                        "https://maeva-delrue-tripadvisor.netlify.app/"
-                      );
-                    }}
-                  ></CTAButton>
-                </div>
-              ))}
+            {/* {showDescTripAdvisor ||
+              (window.innerWidth < 640 && ( */}
+            <div
+              className="description"
+              // onMouseLeave={() => {
+              //   if (window.innerWidth > 640) setShowDescTripAdvisor(false);
+              // }}
+            >
+              <ul>
+                <h4>Trip Advisor</h4>
+                <h5>Projet front-end : HTML, CSS, Vanilla JS</h5>
+                <li>Responsive sur 3 breakpoints</li>
+                <li>Carousel de photos</li>
+                <li>Envoi automatisé de mail</li>
+              </ul>
+              <CTAButton
+                text={"Découvrir"}
+                className="button"
+                onClick={() => {
+                  redirectToProject(
+                    "https://maeva-delrue-tripadvisor.netlify.app/"
+                  );
+                }}
+              ></CTAButton>
+            </div>
+            {/* ))} */}
           </article>
           {/* VINTED */}
           {/* <article>
@@ -114,7 +114,7 @@ const Projects = () => {
               }}
             />
             {showDescMarvel ||
-              (viewportWidth <= 640 && (
+              (window.innerWidth <= 640 && (
                 <div
                   className="description"
                   onMouseLeave={() => {
