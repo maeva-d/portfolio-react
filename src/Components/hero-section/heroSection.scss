@@ -12,7 +12,7 @@
 
   div {
     padding: 48px 24px;
-    width: 380px;
+    width: 400px;
     position: absolute;
     right: 150px;
     bottom: 100px;
@@ -21,11 +21,11 @@
     gap: 32px;
     background-color: transparent;
     backdrop-filter: blur(16px);
-    animation: fadeIn 2s ease-out 1.5s forwards;
+    animation: fadeIn 1.5s ease-out 1.5s forwards;
     opacity: 0;
 
     h2 {
-      font-family: "baserkvvile";
+      font-family: "baskervville";
       color: #{$chinese-white};
       font-size: 24px;
       font-weight: 100;
@@ -33,20 +33,24 @@
       line-height: 40px;
       text-align: right;
       margin-bottom: 8px;
-      animation: fadeIn 2s ease-out 1.5s forwards;
+      // opacity: 0;
+      // transform: perspective(500px) translate3d(-35px, -40px, -150px)
+      //   rotate3d(1, -1, 0, 35deg);
+      animation: fadeIn 2s ease-out 1s forwards;
+    }
+
+    h2,
+    button {
       opacity: 0;
+      transform: perspective(500px) translate3d(-35px, -40px, -150px)
+        rotate3d(1, -1, 0, 35deg);
     }
 
     button {
-      opacity: 0;
-      animation: fadeIn 1s ease-out 4s forwards;
+      animation: fadeIn 1s ease-out 3.5s forwards;
     }
+
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: perspective(500px) translate3d(-35px, -40px, -150px)
-          rotate3d(1, -1, 0, 35deg);
-      }
       to {
         opacity: 1;
         transform: perspective(500px) translate3d(0, 0, 0);
@@ -76,7 +80,7 @@
     div {
       right: 50px;
       bottom: 25px;
-      width: 320px;
+      width: 340px;
 
       h2 {
         font-size: 20px;
@@ -99,11 +103,12 @@
     div {
       padding: 24px;
       right: 25px;
-      bottom: 20px;
-      width: 270px;
+      bottom: 100px;
+      // transform: translate(50%, 50%);
+      width: 310px;
 
       h2 {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 0px;
         line-height: 32px;
       }
@@ -115,9 +120,10 @@
   .hero {
     height: calc(100vh - 48px);
     div {
-      right: 50%;
-      bottom: calc(50% - 48px);
-      transform: translate(50%, 50%);
+      width: 80%;
+      h2 {
+        font-size: 16px;
+      }
     }
   }
 }
