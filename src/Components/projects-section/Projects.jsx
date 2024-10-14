@@ -1,10 +1,11 @@
 // import { useState } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 // styles
 import "../../common-rules.scss";
 import "./projects.scss";
 // Components
-import CTAButton from "../CTA-button/CTAButton";
+import OneProject from "./OneProject";
+// import CTAButton from "../CTA-button/CTAButton";
 // pictures
 import tripadvisor from "../../assets/pictures/tripadvisor.png";
 // import vinted from "../../assets/pictures/vinted.png";
@@ -26,32 +27,44 @@ const Projects = () => {
   //   };
   // }, []);
 
-  const redirectToProject = (url) => {
-    window.open(url, "_blank");
-  };
-
-  console.log(window.innerWidth);
+  // console.log(window.innerWidth);
 
   return (
     <section id="projects" className="projects">
       <div className="container sections">
         <h2>Projets</h2>
         <menu>
-          <article>
+          {/* -- Trip Advisor -- */}
+          <OneProject
+            img={tripadvisor}
+            alt="trip-advisor"
+            title="Trip Advisor"
+            stack="Front-end : HTML, CSS, Vanilla JS"
+            feature1="Responsive sur 3 breakpoints"
+            feature2="Carousel de photos"
+            feature3="Envoi automatisé de mail"
+            projectURL="https://maeva-delrue-tripadvisor.netlify.app/"
+          />
+          {/* -- Marvel -- */}
+          <OneProject
+            img={marvel}
+            alt="univers-marvel"
+            title="L'univers Marvel"
+            stack="UI Design / full-stack : React, SCSS, NodeJS, MongoDB, express"
+            feature2="Serveur back-end intermédiaire"
+            feature3="Récupération de données"
+            feature1="Favoris grâce au local storage"
+            feature5="Barre de recherche"
+            feature4="Pagination"
+            projectURL="https://maeva-d-marvel.netlify.app/"
+          />
+          {/* <article>
             <LazyLoadImage
               src={tripadvisor}
               alt="projet-tripadvisor"
-              // onMouseEnter={() => {
-              //   if (window.innerWidth > 640) setShowDescTripAdvisor(true);
-              // }}
             />
-            {/* {showDescTripAdvisor ||
-              (window.innerWidth < 640 && ( */}
             <div
               className="description"
-              // onMouseLeave={() => {
-              //   if (window.innerWidth > 640) setShowDescTripAdvisor(false);
-              // }}
             >
               <ul>
                 <h4>Trip Advisor</h4>
@@ -70,8 +83,7 @@ const Projects = () => {
                 }}
               ></CTAButton>
             </div>
-            {/* ))} */}
-          </article>
+          </article> */}
           {/* VINTED */}
           {/* <article>
             <LazyLoadImage
@@ -104,44 +116,6 @@ const Projects = () => {
               </div>
             )}
           </article> */}
-          {/* MARVEL */}
-          <article>
-            <LazyLoadImage
-              src={marvel}
-              alt="projet-marvel"
-              // onMouseEnter={() => {
-              //   if (window.innerWidth > 640) setShowDescMarvel(true);
-              // }}
-            />
-            {/* {showDescMarvel ||
-              (window.innerWidth <= 640 && ( */}
-            <div
-              className="description"
-              // onMouseLeave={() => {
-              //   if (window.innerWidth > 640) setShowDescMarvel(false);
-              // }}
-            >
-              <ul>
-                <h4>L'univers Marvel</h4>
-                <h5>
-                  Projet full-stack : React, SCSS, NodeJS, MongoDB, express
-                </h5>
-                {/* <li>Inscription et connexion</li> */}
-                <li>Favoris grâce au local storage </li>
-                <li>Récupération de données</li>
-                <li>Pagination</li>
-                <li>Barre de recherche</li>
-              </ul>
-              <CTAButton
-                text={"Découvrir"}
-                className="button"
-                onClick={() => {
-                  redirectToProject("https://maeva-d-marvel.netlify.app/");
-                }}
-              ></CTAButton>
-            </div>
-            {/* ))} */}
-          </article>
         </menu>
       </div>
     </section>
