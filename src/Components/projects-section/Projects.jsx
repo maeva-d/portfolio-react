@@ -5,8 +5,8 @@ import "./projects.scss";
 import OneProject from "./OneProject";
 // pictures
 import tripadvisor from "../../assets/pictures/tripadvisor.png";
-// import vinted from "../../assets/pictures/vinted.png";
 import marvel from "../../assets/pictures/marvel.png";
+import vinted from "../../assets/pictures/vinted.png";
 
 const Projects = () => {
   // const [showDescTripAdvisor, setShowDescTripAdvisor] = useState(false);
@@ -47,7 +47,7 @@ const Projects = () => {
             img={marvel}
             alt="univers-marvel"
             title="L'univers Marvel"
-            stack="UI Design / full-stack : React, SCSS, NodeJS, MongoDB, express"
+            stack="UI Design / full-stack : React, SCSS, Node.js, Express"
             feature2="Serveur back-end intermédiaire"
             feature3="Récupération de données"
             feature1="Favoris grâce au local storage"
@@ -60,7 +60,7 @@ const Projects = () => {
             img={vinted}
             alt="vinted"
             title="Vinted"
-            stack="Full-stack : React, NodeJS, MongoDB, Express"
+            stack="Full-stack : React, SCSS, Node.js, MongoDB, Express"
             feature1="Inscription et connexion"
             feature2="Récupération de données"
             feature3="Publication d'annonces"
@@ -69,6 +69,12 @@ const Projects = () => {
             feature6="Paiement (Stripe)"
             projectURL="foo"
           /> */}
+          <OneProject
+            img={vinted}
+            alt="vinted"
+            title="Vinted"
+            stack="EN COURS ..."
+          />
         </menu>
       </div>
     </section>

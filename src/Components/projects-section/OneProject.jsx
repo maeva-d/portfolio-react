@@ -29,13 +29,15 @@ const OneProject = ({
           <li>{feature5}</li>
           <li>{feature6}</li>
         </ul>
-        <CTAButton
-          text={"Découvrir"}
-          className="button"
-          onClick={() => {
-            window.open(projectURL, "_blank");
-          }}
-        ></CTAButton>
+        {title !== "Vinted" && (
+          <CTAButton
+            text={"Découvrir"}
+            className="button"
+            onClick={() => {
+              window.open(projectURL, "_blank");
+            }}
+          ></CTAButton>
+        )}
       </div>
     </article>
   );
