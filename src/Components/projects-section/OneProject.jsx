@@ -29,7 +29,7 @@ const OneProject = ({
           <li>{feature5}</li>
           <li>{feature6}</li>
         </ul>
-        {title !== "Vinted" && (
+        {stack !== "EN COURS ..." && (
           <CTAButton
             text={"Découvrir"}
             className="button"

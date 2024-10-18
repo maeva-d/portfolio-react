@@ -56,24 +56,19 @@ const Projects = () => {
             projectURL="https://maeva-d-marvel.netlify.app/"
           />
           {/* -- VINTED -- */}
-          {/* <OneProject
-            img={vinted}
-            alt="vinted"
-            title="Vinted"
-            stack="Full-stack : React, SCSS, Node.js, MongoDB, Express"
-            feature1="Inscription et connexion"
-            feature2="Récupération de données"
-            feature3="Publication d'annonces"
-            feature4="Barre de recherche"
-            feature5="Upload de photos"
-            feature6="Paiement (Stripe)"
-            projectURL="foo"
-          /> */}
           <OneProject
             img={vinted}
             alt="vinted"
             title="Vinted"
             stack="EN COURS ..."
+            // stack="Full-stack : React, SCSS, Node.js, MongoDB, Express"
+            // feature1="Inscription et connexion"
+            // feature2="Récupération de données"
+            // feature3="Publication d'annonces"
+            // feature4="Barre de recherche"
+            // feature5="Upload de photos"
+            // feature6="Paiement (Stripe)"
+            // projectURL="foo"
           />
         </menu>
       </div>
