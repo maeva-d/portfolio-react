@@ -15,8 +15,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       h2 {
         font-size: 50px;
         font-family: "baskervville";
@@ -92,10 +94,6 @@
       width: 100%;
       div {
         padding: 8px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         h2 {
           font-size: 28px;
           line-height: 56px;
