@@ -12,7 +12,8 @@
 
   div {
     padding: 48px 24px;
-    width: 400px;
+    // width: 400px;
+    width: 550px;
     position: absolute;
     right: 200px;
     bottom: 150px;
@@ -21,19 +22,21 @@
     gap: 32px;
     background-color: transparent;
     backdrop-filter: blur(16px);
-    animation: fadeIn 3.5s ease-out 2s forwards;
+    animation: fadeIn 3s ease-out 0.7s forwards;
     opacity: 0;
 
     h2 {
       font-family: "baskervville";
       color: #{$chinese-white};
-      font-size: 24px;
+      // font-size: 24px;
+      font-size: 30px;
       font-weight: 100;
       text-transform: uppercase;
-      line-height: 40px;
+      // line-height: 40px;
+      line-height: 60px;
       text-align: right;
       margin-bottom: 8px;
-      animation: fadeIn 3.5s ease-out 1.5s forwards;
+      animation: fadeIn 3s ease-out 0.7s forwards;
     }
 
     h2,
@@ -44,7 +47,7 @@
     }
 
     button {
-      animation: fadeIn 0.8s ease-out 5.5s forwards;
+      animation: fadeIn 0.7s ease-out 4s forwards;
     }
 
     @keyframes fadeIn {
@@ -62,6 +65,7 @@
     height: calc(100vh - 80px);
 
     div {
+      width: 400px;
       right: 100px;
       bottom: 50px;
 
