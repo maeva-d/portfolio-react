@@ -7,7 +7,6 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  // transition: all 0.4s ease-in;
 
   &.transparent {
     transition: all 0.2s ease-in;
@@ -41,7 +40,6 @@
       position: absolute;
       right: 0px;
       padding: 4px;
-      // background-color: red;
       cursor: pointer;
 
       svg {
@@ -105,7 +103,6 @@
   color: rgb(223, 191, 191);
   position: relative;
   font-size: 9vw;
-  // margin: 70px 200px;
   animation: glitch 5s 5s infinite;
 }
 
