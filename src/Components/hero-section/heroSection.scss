@@ -12,7 +12,6 @@
 
   div {
     padding: 48px 24px;
-    // width: 400px;
     width: 550px;
     position: absolute;
     right: 200px;
@@ -28,11 +27,9 @@
     h2 {
       font-family: "baskervville";
       color: #{$chinese-white};
-      // font-size: 24px;
       font-size: 30px;
       font-weight: 100;
       text-transform: uppercase;
-      // line-height: 40px;
       line-height: 60px;
       text-align: right;
       margin-bottom: 8px;

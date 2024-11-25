@@ -1,4 +1,3 @@
-// import { useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 // Style
 import "../hero-section/heroSection.scss";
