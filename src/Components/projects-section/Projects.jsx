@@ -1,4 +1,3 @@
-// styles
 import "../../common-rules.scss";
 import "./projects.scss";
 // Components
@@ -9,23 +8,6 @@ import marvel from "../../assets/pictures/marvel.png";
 import vinted from "../../assets/pictures/vinted.png";
 
 const Projects = () => {
-  // const [showDescTripAdvisor, setShowDescTripAdvisor] = useState(false);
-  // const [showDescriptionVinted, setShowDescriptionVinted] = useState(false);
-  // const [showDescMarvel, setShowDescMarvel] = useState(false);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setViewportWidth(window.innerWidth);
-  //     window.addEventListener("resize", handleResize);
-  //   };
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
-
-  // console.log(window.innerWidth);
-
   return (
     <section id="projects" className="projects">
       <div className="container sections">
@@ -60,15 +42,14 @@ const Projects = () => {
             img={vinted}
             alt="vinted"
             title="Vinted"
-            stack="EN COURS ..."
-            // stack="Full-stack : React, SCSS, Node.js, MongoDB, Express"
-            // feature1="Inscription et connexion"
-            // feature2="Récupération de données"
-            // feature3="Publication d'annonces"
-            // feature4="Barre de recherche"
-            // feature5="Upload de photos"
-            // feature6="Paiement (Stripe)"
-            // projectURL="foo"
+            stack="Full-stack : React, SCSS, Node.js, MongoDB, Express"
+            feature1="Inscription et connexion"
+            feature2="Récupération de données"
+            feature3="Publication d'annonces"
+            feature4="Barre de recherche"
+            feature5="Upload de photos"
+            feature6="Paiement (Stripe)"
+            projectURL="https://maeva-d-vinted.netlify.app/"
           />
         </menu>
       </div>

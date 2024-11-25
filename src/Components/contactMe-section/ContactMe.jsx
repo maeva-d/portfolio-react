@@ -1,7 +1,6 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
-// styles
 import "../../common-rules.scss";
 import "./contactMe.scss";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 //pictures
 import image from "../../assets/pictures/laptop-jewels-unsplash.jpg";
 

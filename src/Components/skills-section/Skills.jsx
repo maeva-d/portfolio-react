@@ -1,7 +1,6 @@
-import { useState } from "react";
-// Styles
 import "../../common-rules.scss";
 import "./skills.scss";
+import { useState } from "react";
 // Components
 import AddToCart from "../add-to-cart/AddToCart";
 
@@ -11,16 +10,6 @@ const Skills = () => {
   const add = () => {
     setShowErrorMessage(true);
   };
-
-  // const [cart, setCart] = useState([]);
-
-  // // const skillTab = Array.from({ length: 4 }, (_, index) => index);
-
-  // // const handleClick = () => {
-  // //   const cartCopy = [...cart];
-  // //   let itemSpotted = cartCopy.find((elem) => )
-
-  // // }
 
   return (
     <section id="skills" className="skills">
