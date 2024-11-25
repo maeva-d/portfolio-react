@@ -1,27 +1,10 @@
-// import { useState, useEffect } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-// styles
 import "../../common-rules.scss";
 import "./aboutMe.scss";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 // picture
 import image from "../../assets/pictures/blurry-unsplash.jpg";
 
 const AboutMe = () => {
-  // const [isVisible, setIsVisible] = useState(false);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 1000) {
-  //       setIsVisible(true);
-  //     }
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
   return (
     <section id="about-me" className="about-me">
       <div className="container sections">

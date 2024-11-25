@@ -2,87 +2,88 @@
 
 .about-me {
   background-color: #{$chinese-white};
+  min-height: 100vh;
   div {
     display: flex;
-    height: 100vh;
     justify-content: space-between;
     align-items: center;
     gap: 160px;
-  }
 
-  aside {
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    width: 65%;
-
-    h2,
-    h4,
-    p,
-    small {
-      color: #{$deep-green};
+    img {
+      width: 35%;
+      object-fit: cover;
+      max-height: 100%;
     }
 
-    h4 {
-      word-spacing: 24px;
-      font-size: 22px;
-      text-transform: uppercase;
-      letter-spacing: 8px;
-      margin-bottom: 16px;
-      span {
-        font-size: 28px;
-        text-transform: lowercase;
-        letter-spacing: 2px;
+    aside {
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      width: 65%;
+
+      h2,
+      h4,
+      p,
+      small {
+        color: #{$deep-green};
       }
-    }
 
-    h2 {
-      font-size: 56px;
-      line-height: 96px;
-      text-transform: uppercase;
-    }
+      h4 {
+        word-spacing: 24px;
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        margin-bottom: 16px;
+        span {
+          font-size: 28px;
+          text-transform: lowercase;
+          letter-spacing: 2px;
+        }
+      }
 
-    h3 {
-      color: #{$moss-green};
-      font-size: 32px;
-      font-style: italic;
-      margin-bottom: 48px;
-    }
+      h2 {
+        font-size: 56px;
+        line-height: 96px;
+        text-transform: uppercase;
+      }
 
-    p {
-      width: 450px;
-      font-family: "inter", sans-serif;
-      font-size: 18px;
-      line-height: 30px;
-      display: inline-block;
-      margin-bottom: 24px;
-    }
-
-    p,
-    small {
-      font-family: "inter", sans-serif;
-    }
-
-    small {
-      font-size: 15px;
-      font-style: italic;
-      line-height: 20px;
-    }
-
-    a {
-      color: #{$dark-purple};
-      &:hover {
+      h3 {
         color: #{$moss-green};
+        font-size: 32px;
+        font-style: italic;
+        margin-bottom: 48px;
       }
-      &:visited {
-        color: #{$black};
+
+      p {
+        width: 450px;
+        font-family: "inter", sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        display: inline-block;
+        margin-bottom: 24px;
+      }
+
+      p,
+      small {
+        font-family: "inter", sans-serif;
+      }
+
+      small {
+        font-size: 15px;
+        font-style: italic;
+        line-height: 20px;
+      }
+
+      a {
+        color: #{$dark-purple};
+        &:hover {
+          color: #{$moss-green};
+        }
+        &:visited {
+          color: #{$black};
+        }
       }
     }
-  }
-
-  img {
-    width: 35%;
-    object-fit: cover;
   }
 }
 
@@ -105,19 +106,19 @@
   .about-me {
     div {
       gap: 48px;
-    }
-    aside {
-      h2 {
-        font-size: 37px;
-        line-height: 72px;
-      }
-      p {
-        width: unset;
-        line-height: 25px;
-      }
 
       img {
         height: 80%;
+      }
+      aside {
+        h2 {
+          font-size: 37px;
+          line-height: 72px;
+        }
+        p {
+          width: unset;
+          line-height: 25px;
+        }
       }
     }
   }
@@ -125,25 +126,28 @@
 
 @media (max-width: 768px) {
   .about-me {
-    aside {
-      width: 100%;
+    div {
+      min-height: unset;
+      aside {
+        width: 100%;
 
-      h2 {
-        line-height: 56px;
-      }
+        h2 {
+          line-height: 56px;
+        }
 
-      h3 {
-        font-size: 28px;
-        margin: 8px 0 32px 0;
-      }
+        h3 {
+          font-size: 28px;
+          margin: 8px 0 32px 0;
+        }
 
-      p {
-        font-size: 18px;
-        line-height: 28px;
+        p {
+          font-size: 18px;
+          line-height: 28px;
+        }
       }
-    }
-    img {
-      display: none;
+      img {
+        display: none;
+      }
     }
   }
 }

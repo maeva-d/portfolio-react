@@ -32,7 +32,7 @@ const Projects = () => {
             stack="UI Design / full-stack : React, SCSS, Node.js, Express"
             feature2="Serveur back-end intermédiaire"
             feature3="Récupération de données"
-            feature1="Favoris grâce au local storage"
+            feature1="Favoris dans le local storage"
             feature5="Barre de recherche"
             feature4="Pagination"
             projectURL="https://maeva-d-marvel.netlify.app/"
