@@ -3,7 +3,6 @@ import "./projects.scss";
 // Components
 import OneProject from "./OneProject";
 // pictures
-import tripadvisor from "../../assets/pictures/tripadvisor.png";
 import marvel from "../../assets/pictures/marvel.png";
 import vinted from "../../assets/pictures/vinted.png";
 
@@ -13,17 +12,6 @@ const Projects = () => {
       <div className="container sections">
         <h2>Projets</h2>
         <menu>
-          {/* -- Trip Advisor -- */}
-          <OneProject
-            img={tripadvisor}
-            alt="trip-advisor"
-            title="Trip Advisor"
-            stack="Front-end : HTML, CSS, Vanilla JS"
-            feature1="Responsive sur 3 breakpoints"
-            feature2="Carousel de photos"
-            feature3="Envoi automatisé de mail"
-            projectURL="https://maeva-delrue-tripadvisor.netlify.app/"
-          />
           {/* -- Marvel -- */}
           <OneProject
             img={marvel}
@@ -46,7 +34,7 @@ const Projects = () => {
             feature1="Inscription et connexion"
             feature2="Récupération de données"
             feature3="Publication d'annonces"
-            feature4="Barre de recherche"
+            feature4="Barre de recherche et filtres"
             feature5="Upload de photos"
             feature6="Paiement (Stripe)"
             projectURL="https://maeva-d-vinted.netlify.app/"

@@ -12,20 +12,22 @@
 
   aside {
     width: 50%;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    div {
+    align-items: center;
+    > div {
       display: flex;
       flex-direction: column;
       align-items: center;
       h2 {
-        font-size: 38px;
+        font-size: 36px;
         font-family: "baskervville";
         text-transform: uppercase;
       }
       p {
-        font-size: 18px;
+        font-size: 17px;
         font-family: "inter", sans-serif;
         line-height: 100px;
       }
@@ -33,10 +35,11 @@
 
     nav {
       display: flex;
-      flex-direction: column;
+      // flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 24px;
+      margin: 24px 0px;
+      gap: 32px;
       a {
         font-size: 20px;
         font-family: "inter", sans-serif;
@@ -73,15 +76,15 @@
     }
     aside {
       width: 100%;
-      div {
-        padding: 8px;
+      > div {
         h2 {
           font-size: 28px;
           line-height: 56px;
+          margin-bottom: 16px;
         }
         p {
-          font-size: 16px;
-          line-height: 72px;
+          font-size: 14.5px;
+          line-height: 30px;
         }
         h2,
         p {
@@ -100,9 +103,6 @@
           text-align: center;
           // Ne fonctionne pas?
           color: #{$chinese-white};
-          &:not(:last-child) {
-            margin-bottom: 16px;
-          }
           &:hover {
             color: #{$dark-purple};
           }
