@@ -10,7 +10,7 @@ const AboutMe = () => {
       <div className="container sections">
         <aside>
           <h4>
-            <span>/ma.e.va/</span>, Paris
+            <span>/ma.e.va/</span>, Paris - Rennes
           </h4>
           <h2>Développeuse React</h2>
           <h3>Full-stack MERN</h3>
