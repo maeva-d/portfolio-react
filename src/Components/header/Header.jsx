@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
-import cv from "../../assets/pictures/CV_Maeva_Delrue.pdf";
+import cv from "../../assets/pictures/CV_Alternance_Maeva_Delrue.pdf";
 // Style
 import "./header.scss";
 import "../../common-rules.scss";

@@ -1,5 +1,5 @@
 import "./nav-modal.scss";
-import cv from "../../assets/pictures/CV_Maeva_Delrue.pdf";
+import cv from "../../assets/pictures/CV_Alternance_Maeva_Delrue.pdf";
 import { useEffect } from "react";
 
 const NavModal = ({ onClose }) => {
